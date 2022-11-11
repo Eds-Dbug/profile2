@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider,Route} from 'react-router-dom';
 import Home from './routes/Home.tsx';
 import Projects from './routes/Projects.tsx';
+import ErrorPage from './error/ErrorPage.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Home />,
+		errorElement: <ErrorPage />
 	},
 	{
 		path: '/projects',
