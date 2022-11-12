@@ -6,18 +6,22 @@ import {createBrowserRouter, RouterProvider,Route} from 'react-router-dom';
 import Home from './routes/Home.tsx';
 import Projects from './routes/Projects.tsx';
 import ErrorPage from './error/ErrorPage.tsx';
+import Contact from './routes/Contact.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Home />,
-		errorElement: <ErrorPage />
+		errorElement: <ErrorPage />,
 	},
 	{
 		path: '/projects',
 		element: <Projects />,
 	},
-  
+	{
+		path: '/contact',
+		element: <Contact />,
+	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
