@@ -7,6 +7,8 @@ import Home from './routes/Home.tsx';
 import Projects from './routes/Projects.tsx';
 import ErrorPage from './error/ErrorPage.tsx';
 import Contact from './routes/Contact.tsx';
+import Certificates from './routes/Certificates.tsx';
+import Skills from './routes/Skills.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
 	{
 		path: '/projects',
 		element: <Projects />,
+	},
+	{
+		path: '/certificates',
+		element: <Certificates />,
+	},
+	{
+		path: '/skills',
+		element: <Skills />,
 	},
 	{
 		path: '/contact',
