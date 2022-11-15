@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider,Route} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Home from './routes/Home.tsx';
 import Projects from './routes/Projects.tsx';
 import ErrorPage from './error/ErrorPage.tsx';
 import Contact from './routes/Contact.tsx';
 import Certificates from './routes/Certificates.tsx';
 import Skills from './routes/Skills.tsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
 	{
