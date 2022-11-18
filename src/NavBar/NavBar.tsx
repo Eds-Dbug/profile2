@@ -1,11 +1,24 @@
 import React from 'react'
- import bootstrap from 'bootstrap';
-
- 
+import links from './Links'
 export default function NavBar() {
+
+
+  const navMap = links.map((link: any) => {
+    return (
+      <a className="nav-padding btn btn-outline-secondary"
+				 href={link.url}
+				 key={link.id}
+      >
+          {link.name}
+      </a>
+    )
+  })
+
   return (
-    <nav className="navbar navbar-expand-lg bg-light btn">
-      <button type="button" className="btn btn-primary">Primary</button>
+    <nav className="navbar navbar-expand-sm bg-dark fixed-top">
+      <ul className="navbar-nav mr">
+        {navMap}
+      </ul>
     </nav>
   )
 }
