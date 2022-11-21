@@ -5,7 +5,7 @@ export default function NavBar() {
 
   const navMap = links.map((link: any) => {
     return (
-      <a className="nav-padding btn btn-outline-secondary"
+      <a className="nav-padding btn btn-outline-secondary "
 				 href={link.url}
 				 key={link.id}
       >
@@ -15,7 +15,7 @@ export default function NavBar() {
   })
 
   return (
-    <nav className="navbar navbar-expand-sm bg-dark fixed-top">
+    <nav className="navbar navbar-expand-sm bg-dark fixed-top mb-4">
       <ul className="navbar-nav mr">
         {navMap}
       </ul>
