@@ -2,7 +2,7 @@ const links = [
 	{
 		id: 1,
 		name: 'Home',
-		url: '/Home',
+		url: '/',
 	},
 	{
 		id: 2,

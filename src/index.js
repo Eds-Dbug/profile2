@@ -9,7 +9,8 @@ import ErrorPage from './error/ErrorPage.tsx';
 import Contact from './routes/Contact.tsx';
 import Certificates from './routes/Certificates.tsx';
 import Skills from './routes/Skills.tsx';
-import NavBar from '../src/NavBar/NavBar.tsx'
+//import NavBar from '../src/NavBar/NavBar.tsx';
+import ActiveNavBar from '../src/NavBar/ActiveNavBar.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -37,10 +38,10 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-		<NavBar />
-    <RouterProvider router={router} />
-  </React.StrictMode>
+	<React.StrictMode>
+		
+		<RouterProvider router={router} />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

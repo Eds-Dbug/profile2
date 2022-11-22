@@ -1,9 +1,11 @@
 import React from 'react'
-import './styles/home.scss'; 
+import './styles/home.scss';
+import ActiveNavBar from '../NavBar/ActiveNavBar'; 
 
 export default function Home() {
   return (
     <div className="home d-flex justify-content-center align-items-center">
+      <ActiveNavBar/>
       <div className="home__block card">
         <div className="row g-0">  
           <div className="col-md-8">
