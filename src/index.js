@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Root from './routes/Root.tsx'
 import Home from './routes/Home.tsx';
 import Projects from './routes/Projects.tsx';
 import ErrorPage from './error/ErrorPage.tsx';
@@ -10,36 +11,38 @@ import Contact from './routes/Contact.tsx';
 import Certificates from './routes/Certificates.tsx';
 import Skills from './routes/Skills.tsx';
 //import NavBar from '../src/NavBar/NavBar.tsx';
-import ActiveNavBar from '../src/NavBar/ActiveNavBar.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Home />,
+		element: <Root />,
 		errorElement: <ErrorPage />,
-	},
-	{
-		path: '/projects',
-		element: <Projects />,
-	},
-	{
-		path: '/certificates',
-		element: <Certificates />,
-	},
-	{
-		path: '/skills',
-		element: <Skills />,
-	},
-	{
-		path: '/contact',
-		element: <Contact />,
+		children: [
+			{ path: '/home', element: <Home />, errorElement: <ErrorPage /> },
+			{
+				path: '/projects',
+				element: <Projects />,
+				errorElement: <ErrorPage />,
+			},
+			{
+				path: '/certificates',
+				element: <Certificates />,
+			},
+			{
+				path: '/skills',
+				element: <Skills />,
+			},
+			{
+				path: '/contact',
+				element: <Contact />,
+			},
+		],
 	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		
 		<RouterProvider router={router} />
 	</React.StrictMode>
 );

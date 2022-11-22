@@ -2,27 +2,27 @@ const links = [
 	{
 		id: 1,
 		name: 'Home',
-		url: '/',
+		url: '/home',
 	},
 	{
 		id: 2,
 		name: 'Projects',
-		url: '/Projects',
+		url: '/projects',
 	},
 	{
 		id: 3,
 		name: 'Skills',
-		url: '/Skills',
+		url: '/skills',
 	},
 	{
 		id: 4,
 		name: 'Certificates',
-		url: '/Certificates',
+		url: '/certificates',
 	},
 	{
 		id: 5,
 		name: 'Contact',
-		url: '/Contact',
+		url: '/contact',
 	},
 ];
 
