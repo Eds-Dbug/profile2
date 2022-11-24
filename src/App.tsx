@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import './index.css';
 
@@ -24,6 +24,12 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				element: <Home />,
+				// children: [
+				// 	{
+				// 		path: '/home/minis',
+				// 		element: <Minis/>
+				// 	}
+				// ]
 			},
 			{
 				path: '/projects',

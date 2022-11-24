@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router';
 import './styles/home.scss';
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
         </div>
 
       </div>
+
+      <Outlet/>
     </div>
   )
 }
