@@ -10,6 +10,9 @@ import ErrorPage from './error/ErrorPage.tsx';
 import Contact from './routes/Contact.tsx';
 import Certificates from './routes/Certificates.tsx';
 import Skills from './routes/Skills.tsx';
+import Cycling from './routes/HobbyRoutes/Cycling.tsx';
+import Minis from './routes/HobbyRoutes/Minis.tsx';
+import Chivalry from './routes/HobbyRoutes/Chivalry.tsx';
 //import NavBar from '../src/NavBar/NavBar.tsx';
 
 const router = createBrowserRouter([
@@ -18,7 +21,28 @@ const router = createBrowserRouter([
 		element: <Root />,
 		errorElement: <ErrorPage />,
 		children: [
-			{ path: '/home', element: <Home />, errorElement: <ErrorPage /> },
+			{
+				path: '/home',
+				element: <Home />,
+				errorElement: <ErrorPage />,
+				children: [
+					{
+						path: '/home/cycling',
+						element: <Cycling />,
+						errorElement: <ErrorPage />,
+					},
+					{
+						path: '/home/minis',
+						element: <Minis />,
+						errorElement: <ErrorPage />,
+					},
+					{
+						path: '/home/chivalry',
+						element: <Chivalry />,
+						errorElement: <ErrorPage />,
+					},
+				],
+			},
 			{
 				path: '/projects',
 				element: <Projects />,
