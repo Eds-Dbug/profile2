@@ -1,8 +1,8 @@
 
-import './App.css';
+import './routes/styles/app.scss';
 import './index.css';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root';
 import Home from './routes/Home';
 import Projects from './routes/Projects';
@@ -14,56 +14,26 @@ import Cycling from './routes/HobbyRoutes/Cycling';
 import Minis from './routes/HobbyRoutes/Minis';
 import Chivalry from './routes/HobbyRoutes/Chivalry';
 import Spinner from 'react-bootstrap/Spinner';
+import ActiveNavBar from './NavBar/ActiveNavBar';
+
 
 //import NavBar from '../src/NavBar/NavBar';
 
-const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <Root />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				index: true,
-				element: <Home />,
-			},
-			{
-				path: '/projects',
-				element: <Projects />,
-				errorElement: <ErrorPage />,
-			},
-			{
-				path: '/certificates',
-				element: <Certificates />,
-			},
-			{
-				path: '/skills',
-				element: <Skills />,
-			},
-			{
-				path: '/contact',
-				element: <Contact />,
-			},
-
-			{
-				path: 'home/chivalry',
-				element: <Chivalry />,
-			},
-			{
-				path: 'home/cycling',
-				element: <Cycling />,
-			},
-		],
-	},
-]);
-
-
 function App() {
   return (
-		<RouterProvider
-			router={router}
-			fallbackElement={<Spinner animation="border" />}
-		/>
+		<div className="App">
+			<ActiveNavBar />
+			<Routes>
+				<Route path="/" element={<Home />}>
+					<Route path="cycling" element={<Cycling />} />
+					<Route path="minis" element={<Minis />} />
+				</Route>
+				<Route path="/projects" element={<Projects />}>
+					<Route path="cycling" element={<Cycling />} />
+				</Route>
+				<Route path="/skills" element={<Skills />}></Route>
+			</Routes>
+		</div>
 	);
 }
 

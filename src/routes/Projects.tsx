@@ -1,12 +1,15 @@
 import React from 'react'
-import NavBar from '../NavBar/NavBar';
+import { Link, Outlet } from 'react-router-dom';
+
 
 export default function Projects() {
   return (
-    <div>
-      fsfdsf
-      Projects
-    </div>
-    
-  )
+		<div>
+			fsfdsf Projects
+			<nav>
+				<Link to="cycling">Cycling</Link>
+			</nav>
+			<Outlet />
+		</div>
+	);
 }
