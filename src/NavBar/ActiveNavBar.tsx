@@ -1,6 +1,6 @@
 import React from 'react'
 import links from './Links'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export default function ActiveNavBar() {
 

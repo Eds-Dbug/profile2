@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import './styles/home.scss';
 
 export default function Home() {
@@ -17,22 +18,19 @@ export default function Home() {
           <div className="col-md-4 ">
             <img src={require("../Pictures/ME.jpg")} className="img-fluid rounded-circle" alt="..."/>
           </div>
-            <div className="home__block__dropdown dropdown ">
-              <a className="btn btn-secondary dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-
-              <ul className="dropdown-menu ">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+          <div>
+            <nav>
+              <NavLink to='home/minis'>
+                Minis
+              </NavLink>
+            </nav>
+            <Outlet/>
           </div>
+          
         </div>
-
       </div>
 
-      <Outlet/>
+      
     </div>
   )
 }
