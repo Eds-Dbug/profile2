@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div>
             <nav>
-              <NavLink to='home/minis'>
+              <NavLink to='minis'>
                 Minis
               </NavLink>
             </nav>
