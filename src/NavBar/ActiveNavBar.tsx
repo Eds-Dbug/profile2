@@ -10,7 +10,13 @@ export default function ActiveNavBar() {
 				 to={link.url}
 				 key={link.id}
       >
-          {link.name}
+          {({ isActive }) =>
+         isActive ? (
+               <text >{link.name}</text>
+         ) : (                      
+               <text>{link.name}</text>
+         )
+      }
       </NavLink>
     )
   })
