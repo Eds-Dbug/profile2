@@ -4,23 +4,28 @@ const links = [
 		name: 'Home',
 		url: '/',
 	},
-	{
+  {
 		id: 2,
+		name: 'Contact',
+		url: '/contact',
+	},
+	{
+		id: 3,
 		name: 'Projects',
 		url: '/projects',
 	},
 	{
-		id: 3,
+		id: 4,
 		name: 'Skills',
 		url: '/skills',
 	},
 	{
-		id: 4,
+		id: 5,
 		name: 'Certificates',
 		url: '/certificates',
 	},
 	{
-		id: 5,
+		id: 6,
 		name: 'Contact',
 		url: '/contact',
 	},
