@@ -24,15 +24,18 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: '/',
+				index: false,
+        path: '/',
+
 				element: <Home />,
-				children: [
-					{
-						path: 'minis',
-						element: <Minis />,
-					},
-				],
+        children: [
+          {path: 'minis', element: <Minis/>}
+        ]
 			},
+      {
+        path: 'minis',
+        element: <Minis/>
+      },
 
 			{
 				path: '/projects',
@@ -60,7 +63,9 @@ const router = createBrowserRouter([
 			},
 		],
 	},
-]);
+],{
+  basename: "/home",
+});
 
 
 function App() {
