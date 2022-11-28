@@ -6,8 +6,8 @@ const links = [
 	},
   {
 		id: 2,
-		name: 'Contact',
-		url: '/contact',
+		name: 'About / Hobbies',
+		url: '/hobbies',
 	},
 	{
 		id: 3,

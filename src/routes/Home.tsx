@@ -19,11 +19,7 @@ export default function Home() {
             <img src={require("../Pictures/ME.jpg")} className="img-fluid rounded-circle" alt="..."/>
           </div>
           <div>
-            <nav>
-              <NavLink to='minis'>
-                Minis
-              </NavLink>
-            </nav>
+            
             <Outlet/>
           </div>
           

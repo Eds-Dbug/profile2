@@ -14,6 +14,7 @@ import Cycling from './routes/HobbyRoutes/Cycling';
 import Minis from './routes/HobbyRoutes/Minis';
 import Chivalry from './routes/HobbyRoutes/Chivalry';
 import Spinner from 'react-bootstrap/Spinner';
+import Hobbies from './routes/Hobbies';
 
 //import NavBar from '../src/NavBar/NavBar';
 
@@ -25,16 +26,14 @@ const router = createBrowserRouter([
 		children: [
 			{
 				index: true,
-        path: '/',
 				element: <Home />,
 			},
       {
-        path: 'minis',
-        element: <Minis/>
+        path: 'hobbies' ,
+        element: <Hobbies/>
       },
-
 			{
-				path: '/projects',
+				path: 'projects',
 				element: <Projects />,
 
 				errorElement: <ErrorPage />,
@@ -46,21 +45,21 @@ const router = createBrowserRouter([
 				],
 			},
 			{
-				path: '/certificates',
+				path: 'certificates',
 				element: <Certificates />,
 			},
 			{
-				path: '/skills',
+				path: 'skills',
 				element: <Skills />,
 			},
 			{
-				path: '/contact',
+				path: 'contact',
 				element: <Contact />,
 			},
 		],
 	},
 ],{
-  basename: "/home",
+  basename: "/",
 });
 
 
