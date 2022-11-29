@@ -1,7 +1,6 @@
 import React from 'react'
-import links from './Links'
+import {links} from './Links'
 export default function NavBar() {
-
 
   const navMap = links.map((link: any) => {
     return (

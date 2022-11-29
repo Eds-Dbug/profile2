@@ -1,7 +1,7 @@
 import React from 'react'
-import links from './Links'
+import {links} from './Links'
 import { NavLink } from 'react-router-dom';
-import './styles/ActiveNavbar.scss';
+import '../styles/Navigation/ActiveNavbar.scss';
 
 export default function ActiveNavBar() {
 

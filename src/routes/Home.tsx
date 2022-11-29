@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router';
 import { NavLink } from 'react-router-dom';
-import './styles/home.scss';
+import '../styles/routes/home.scss';
 
 export default function Home() {
   return (
