@@ -1,12 +1,13 @@
 import React from 'react'
 import links from './Links'
 import { NavLink } from 'react-router-dom';
+import './styles/ActiveNavbar.scss';
 
 export default function ActiveNavBar() {
 
   const navMap = links.map((link: any) => {
     return (
-      <NavLink className="nav-padding btn btn-outline-secondary "
+      <NavLink className="nav-padding btn btn-outline-success "
 				 to={link.url}
 				 key={link.id}
       >
@@ -16,7 +17,7 @@ export default function ActiveNavBar() {
   })
 
   return (
-    <nav className="navbar navbar-expand-sm bg-dark fixed-top mb-4">
+    <nav className="navbar navbar-expand-sm fixed-top mb-4 main-navBar">
       <ul className="navbar-nav mr">
         {navMap}
       </ul>

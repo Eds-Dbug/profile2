@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/Hobbies/HobbiesSideBar';
-import '../routes/HobbyRoutes/s';
+import '../routes/HobbyRoutes/styles/hobbies.scss';
 
 export default function Hobbies() {
   return (
-    <div className='Hobbies'>
-      <section className='Hobbies__about'>
+    <div className='Hobbies d-flex flex-column justify-content-center align-items-center'>
+      <section className='Hobbies__about d-flex flex-column  align-items-center'>
         <h1>ABOUT</h1>
         <div className='card'>
          <div className='card-body'>
