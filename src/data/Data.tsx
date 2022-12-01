@@ -1,6 +1,6 @@
 const contacts = [
 	{
-		platform: 'github',
+		platform: 'Github',
 		link: 'https://github.com/Eds-Dbug',
 	},
 ];
