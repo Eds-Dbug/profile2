@@ -2,5 +2,11 @@
   width: 94%;
   &__card {
     width: 22%;
+    &__body {
+      width: 100%;
+      a {
+        color: red;
+      }
+    }
   }
 }
