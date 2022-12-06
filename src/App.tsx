@@ -15,8 +15,13 @@ import Minis from './routes/HobbyRoutes/Minis';
 import Chivalry from './routes/HobbyRoutes/Chivalry';
 import Spinner from 'react-bootstrap/Spinner';
 import Hobbies from './routes/Hobbies';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faGithub, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee,  } from '@fortawesome/free-solid-svg-icons';
 
 //import NavBar from '../src/NavBar/NavBar';
+
+library.add(fab, faGithub, faCheckSquare, faCoffee, faSquareGithub);
 
 const router = createBrowserRouter([
 	{
