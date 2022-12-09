@@ -7,16 +7,22 @@
   
   &__cards {
     @include flex($d: row, $c: center, $i: center);
-    height: 50vh;
-    
+    margin-top: 35vh;
     
     &__card {
-      height: 160px;
+      
       width: 22vw;
-      margin-right: 2%;
-      &__body {
+      margin: 1%;
+
+      .body {
+
         a {
+          
           @include flex($d: column, $c: center, $i: center);
+          .icon {
+            width: 30%;
+            height: 30%;
+          }
         }
       }
     }

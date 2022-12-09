@@ -8,10 +8,10 @@ export default function Contact() {
   const contactMap = contacts.map(contact => {
     return (
 			<div className="card contact__cards__card">
-				<div className="card-body contact__cards__card__body">
+				<div className="body">
         
 					<a href={contact.link}>
-            <FontAwesomeIcon icon={[contact.iconPrefix as IconPrefix, contact.iconName as IconName]} />
+            <FontAwesomeIcon className="icon" icon={[contact.iconPrefix as IconPrefix, contact.iconName as IconName]} />
 						<h5>{contact.platform}</h5>
 					</a>
 				</div>
