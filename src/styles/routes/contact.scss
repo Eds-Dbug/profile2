@@ -1,11 +1,16 @@
 .contact {
+  margin-top: 50px;
   width: 94%;
-  &__card {
-    width: 22%;
-    &__body {
-      width: 100%;
-      a {
-        color: red;
+  &__cards {
+    padding-top: 10px;
+    &__card {
+      height: 160px;
+      width: 160px;
+      &__body {
+        width: 100%;
+        a {
+          color: red;
+        }
       }
     }
   }

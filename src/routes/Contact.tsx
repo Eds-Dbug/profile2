@@ -7,8 +7,8 @@ import { IconName } from '@fortawesome/free-solid-svg-icons';
 export default function Contact() {
   const contactMap = contacts.map(contact => {
     return (
-			<div className="card contact__card">
-				<div className="card-body contact__card__body">
+			<div className="card contact__cards__card">
+				<div className="card-body contact__cards__body">
 					<FontAwesomeIcon icon={[contact.iconPrefix as IconPrefix, contact.iconName as IconName]} />
 					<a href={contact.link}>
 						<h5>{contact.platform}</h5>
@@ -20,7 +20,9 @@ export default function Contact() {
 
   return (
 		<div className="contact ps-3">
-			{contactMap}
+      <div className='contact__cards'>
+        {contactMap}
+      </div>	
 		</div>
 	);
 }

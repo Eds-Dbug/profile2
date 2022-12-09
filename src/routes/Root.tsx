@@ -1,4 +1,3 @@
-import React from 'react';
 import ActiveNavBar from '../NavBar/ActiveNavBar';
 import { Outlet } from 'react-router';
 import '../styles/routes/root.scss';
