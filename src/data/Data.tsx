@@ -1,8 +1,24 @@
 
-
-
 const contacts = [
 	{
+		iconPrefix: 'fab',
+		iconName: 'square-github',
+		platform: 'Github',
+		link: 'https://github.com/Eds-Dbug',
+	},
+  {
+		iconPrefix: 'fab',
+		iconName: 'linkedin',
+		platform: 'Linkedin',
+		link: 'https://www.linkedin.com/in/edgar-leung-aa9ba0216/',
+	},
+  {
+		iconPrefix: 'fab',
+		iconName: 'square-github',
+		platform: 'Github',
+		link: 'https://github.com/Eds-Dbug',
+	},
+  {
 		iconPrefix: 'fab',
 		iconName: 'square-github',
 		platform: 'Github',

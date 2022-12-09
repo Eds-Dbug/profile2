@@ -1,15 +1,22 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
 .contact {
-  margin-top: 50px;
+  height: 100vh;
   width: 94%;
+  
   &__cards {
-    padding-top: 10px;
+    @include flex($d: row, $c: center, $i: center);
+    height: 50vh;
+    
+    
     &__card {
       height: 160px;
-      width: 160px;
+      width: 22vw;
+      margin-right: 2%;
       &__body {
-        width: 100%;
         a {
-          color: red;
+          @include flex($d: column, $c: center, $i: center);
         }
       }
     }
