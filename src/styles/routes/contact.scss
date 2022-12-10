@@ -13,16 +13,17 @@
       
       width: 22vw;
       margin: 1%;
-
       .body {
-
+        
         a {
-          
           @include flex($d: column, $c: center, $i: center);
+          text-decoration: none;
+          color:$charleston-green ;
           .icon {
             width: 30%;
             height: 30%;
           }
+          
         }
       }
     }

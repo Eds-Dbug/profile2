@@ -9,9 +9,14 @@ export default function Contact() {
     return (
 			<div className="card contact__cards__card">
 				<div className="body">
-        
-					<a href={contact.link}>
-            <FontAwesomeIcon className="icon" icon={[contact.iconPrefix as IconPrefix, contact.iconName as IconName]} />
+					<a className="btn btn-outline-success" href={contact.link}>
+						<FontAwesomeIcon
+							className="icon"
+							icon={[
+								contact.iconPrefix as IconPrefix,
+								contact.iconName as IconName,
+							]}
+						/>
 						<h5>{contact.platform}</h5>
 					</a>
 				</div>
