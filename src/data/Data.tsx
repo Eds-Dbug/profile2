@@ -6,23 +6,23 @@ const contacts = [
 		platform: 'Github',
 		link: 'https://github.com/Eds-Dbug',
 	},
-  {
+	{
 		iconPrefix: 'fab',
 		iconName: 'linkedin',
 		platform: 'Linkedin',
 		link: 'https://www.linkedin.com/in/edgar-leung-aa9ba0216/',
 	},
-  {
-		iconPrefix: 'fab',
-		iconName: 'square-github',
-		platform: 'Github',
-		link: 'https://github.com/Eds-Dbug',
+	{
+		iconPrefix: 'fas',
+		iconName: 'envelope',
+		platform: 'Email',
+		link: 'edsdbug@gmail.com',
 	},
-  {
-		iconPrefix: 'fab',
-		iconName: 'square-github',
-		platform: 'Github',
-		link: 'https://github.com/Eds-Dbug',
+	{
+		iconPrefix: 'fas',
+		iconName: 'phone',
+		platform: '416 822 3939',
+		link: '',
 	},
 ];
 
