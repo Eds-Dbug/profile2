@@ -10,7 +10,7 @@
     margin-top: 35vh;
     
     &__card {
-      
+      height: 100%;
       width: 22vw;
       margin: 1%;
       .body {
@@ -21,7 +21,7 @@
           color:$charleston-green ;
           .icon {
             width: 30%;
-            height: 30%;
+            height: 15vh;
           }
           
         }
