@@ -26,6 +26,7 @@ export default function Contact() {
 
   return (
 		<div className="contact ps-3">
+			<h1 className='contact__title'>Contact</h1>
       <div className='contact__cards'>
         {contactMap}
       </div>	

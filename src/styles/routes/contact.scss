@@ -3,11 +3,18 @@
 
 .contact {
   height: 100vh;
-  width: 94%;
+  margin: 0 10px;
+
+  &__title{
+    margin-top: 15vh;
+    border-radius: $header-round;
+    background-color: $camel;
+    text-align: center;
+  }
   
   &__cards {
     @include flex($d: row, $c: center, $i: center);
-    margin-top: 35vh;
+    margin-top: 25vh;
     
     &__card {
       height: 100%;
