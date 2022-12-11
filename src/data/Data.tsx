@@ -15,7 +15,7 @@ const contacts = [
 	{
 		iconPrefix: 'fas',
 		iconName: 'envelope',
-		platform: 'Email',
+		platform: 'edsdbug@gmail.com',
 		link: 'edsdbug@gmail.com',
 	},
 	{

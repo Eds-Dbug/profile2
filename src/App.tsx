@@ -27,8 +27,6 @@ library.add(fab, faGithub, faCheckSquare, faCoffee, faSquareGithub, faEnvelope, 
 
 //import NavBar from '../src/NavBar/NavBar';
 
-
-
 const router = createBrowserRouter([
 	{
 		path: '/',
