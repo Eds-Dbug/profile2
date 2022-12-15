@@ -16,13 +16,13 @@ const contacts = [
 		iconPrefix: 'fas',
 		iconName: 'envelope',
 		platform: 'edsdbug@gmail.com',
-		link: 'copy',
+		link: '',
 	},
 	{
 		iconPrefix: 'fas',
 		iconName: 'phone',
 		platform: '416 822 3939',
-		link: 'copy',
+		link: '',
 	},
 ];
 
