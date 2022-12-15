@@ -3,25 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { contacts } from '../data/Data';
 import { IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
 
 export default function Contact() {
-	const [text,textToCopy] = useState('');
-
-	const cpyText = () => {
-		navigator.clipboard.writeText(text);
-	};
-
-
   const contactMap = contacts.map(contact => {
     return (
 			<div className="card contact__cards__card">
 				<div className="body">
-					<a
-						className="btn btn-outline-success"
-						href={contact.link}
-						onClick={cpyText}
-					>
+					<a className="btn btn-outline-success" href={contact.link}>
 						<FontAwesomeIcon
 							className="icon"
 							icon={[
