@@ -3,7 +3,13 @@
 
 .copied {
   visibility: hidden;
+  text-align: center;
+  &--toggled {
+    visibility: visible;
+  }
 }
+
+
 
 .contact {
   height: 100vh;

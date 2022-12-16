@@ -33,11 +33,11 @@ export default function Contact() {
   const contactMap = contacts.map(contact => {
     return (
 			<>
-				<div className="card contact__cards__card">
+				<div className=" contact__cards__card">
 					 
 						<h6 className={classNames({
-							'copied': textToCopy !== contact.platform,
-							
+							'copied': true,
+							'copied--toggled': textToCopy === contact.platform,	
 							})}>Copied to Clipboard</h6>
 					
 					<div className="body">
