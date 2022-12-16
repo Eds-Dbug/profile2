@@ -4,10 +4,8 @@ import { contacts } from '../data/Data';
 import { IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router';
-import { useState } from 'react';
 
 export default function Contact() {
-	//const [pathUrl, setPathUrl] = useState('');
 
 	let navigate = useNavigate();
 	const routeChange = (pathUrl: string) => {
