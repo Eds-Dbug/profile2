@@ -1,6 +1,10 @@
 @import '/src/styles/mixins.scss';
 @import '/src/styles/variables.scss';
 
+.copied {
+  visibility: hidden;
+}
+
 .contact {
   height: 100vh;
   margin: 0 10px;

@@ -5,11 +5,12 @@ import { IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router';
 import { useEffect, useState } from 'react';
+import classNames from 'classnames';
 
 export default function Contact() {
-
-	const [copyToBoard,setCopyToBoard ] = useState(false);
 	const [textToCopy, setTextToCopy] = useState(''); 
+
+
 
 	const routeChange = (pathUrl: string) => {
 		window.open(pathUrl);
@@ -18,24 +19,27 @@ export default function Contact() {
 	const copyToClipBoard = (text: string) => {
 		navigator.clipboard.writeText(text);
 		//need to set new state to true
-		setCopyToBoard(true);
+		setTextToCopy(text);
+		//setCopyToBoard(true);
 	}
 
 	useEffect(() => {
-		setTimeout(()=> {
-			setCopyToBoard(false);
-		},3000)
-	}, [copyToBoard]);
+		setTimeout(() => {
+			//setCopyToBoard(false);
+			setTextToCopy('');
+		}, 7000);
+	}, [textToCopy]);
 
   const contactMap = contacts.map(contact => {
     return (
 			<>
-				{!contact.link && copyToBoard ? (
-					<h6>{contact.platform} Copied to Clipboard</h6>
-				) : (
-					<></>
-				)}
 				<div className="card contact__cards__card">
+					 
+						<h6 className={classNames({
+							'copied': textToCopy !== contact.platform,
+							
+							})}>Copied to Clipboard</h6>
+					
 					<div className="body">
 						<a
 							className="btn btn-outline-success"
