@@ -11,15 +11,11 @@ export default function Contact() {
 
 	let navigate = useNavigate();
 	const routeChange = (pathUrl: string) => {
-		navigate(pathUrl);
+		window.open(pathUrl);
 	};
 
 	const copyToClipBoard = (text: string) => {
 		navigator.clipboard.writeText(text);
-	}
-
-	const handleCopyOrNavigate = (navigate: string) => {
-		
 	}
 
   const contactMap = contacts.map(contact => {
