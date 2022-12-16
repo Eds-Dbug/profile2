@@ -8,7 +8,8 @@ import { useEffect, useState } from 'react';
 
 export default function Contact() {
 
-	const [copyToBoard,setCopyToBoard ] = useState(false); 
+	const [copyToBoard,setCopyToBoard ] = useState(false);
+	const [textToCopy, setTextToCopy] = useState(''); 
 
 	const routeChange = (pathUrl: string) => {
 		window.open(pathUrl);
@@ -29,8 +30,12 @@ export default function Contact() {
   const contactMap = contacts.map(contact => {
     return (
 			<>
+				{!contact.link && copyToBoard ? (
+					<h6>{contact.platform} Copied to Clipboard</h6>
+				) : (
+					<></>
+				)}
 				<div className="card contact__cards__card">
-					{!contact.link && copyToBoard ? <h6>Copied to Clipboard</h6> : <></>}
 					<div className="body">
 						<a
 							className="btn btn-outline-success"
