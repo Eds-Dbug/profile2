@@ -32,7 +32,6 @@ export default function Contact() {
     return (
 			<>
 				<div className=" contact__cards__card">
-					 
 						<h6 className={classNames({
 							'copied': true,
 							'copied--toggled': textToCopy === contact.platform,	

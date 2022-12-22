@@ -5,7 +5,7 @@ import { certificates } from "../data/Data";
 export default function Certificates() {
 	const certificateMap = certificates.map((cert) => {
 		return (
-			<div className="card certifications__grid__item">
+			<div className="card certifications__grid__item" key={cert.id}>
 				<img
 					src={cert.pic}
 					className="btn btn-outline-success card-img-top"

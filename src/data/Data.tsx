@@ -1,4 +1,4 @@
-import {JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN} from '../Pictures'
+import {JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN} from '../Pictures/index'
 
 const contacts = [
 	{

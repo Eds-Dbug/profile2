@@ -7,9 +7,9 @@ export default function ActiveNavBar() {
 
   const navMap = links.map((link: any) => {
     return (
-      <NavLink className="nav-padding btn btn-outline-success "
-				 to={link.url}
-				 key={link.id}
+      <NavLink className="nav-padding btn btn-outline-success"
+				to={link.url}
+				key={link.id}
       >
           {link.name}
       </NavLink>
