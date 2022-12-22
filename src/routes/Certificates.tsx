@@ -1,11 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+import Header from "../partials/Header";
 
 export default function Certificates() {
+	
+
   return (
-		<div>
-			Certificates
-			
+		<div className="certifications">
+			<Header title="Certifications" />
+			<section className="certifications__grid">
+
+			</section>
 		</div>
 	);
 }
