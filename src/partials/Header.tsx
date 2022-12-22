@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import '../styles/Partials/header.scss';
 
-export default function Header({title}: {title: string}) {
-	
-
-  return (
+export default function Header({ title }: { title: string }) {
+	return (
 		<div>
-			<h1 className="Header__title">{title}</h1>
+			<h1 className="header">{title}</h1>
 		</div>
 	);
 }

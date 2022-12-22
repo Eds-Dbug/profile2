@@ -3,14 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { contacts } from '../data/Data';
 import { IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import Header from '../partials/Header';
 
 export default function Contact() {
 	const [textToCopy, setTextToCopy] = useState(''); 
-
-
 
 	const routeChange = (pathUrl: string) => {
 		window.open(pathUrl);
@@ -66,7 +64,7 @@ export default function Contact() {
 
   return (
 		<div className="contact ps-3">
-			<h1 className='contact__title'>Contact</h1>
+			<Header title='Contacts'/>
       <div className='contact__cards'>
         {contactMap}
       </div>	

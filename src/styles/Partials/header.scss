@@ -1,0 +1,10 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.header {
+  margin-top: 15vh;
+  border-radius: $header-round;
+  background-color: $camel;
+  text-align: center;
+  font-size: 300%;
+}
