@@ -1,24 +1,28 @@
 
 const contacts = [
 	{
+		id: 1,
 		iconPrefix: 'fab',
 		iconName: 'square-github',
 		platform: 'Github',
 		link: 'https://github.com/Eds-Dbug',
 	},
 	{
+		id: 2,
 		iconPrefix: 'fab',
 		iconName: 'linkedin',
 		platform: 'Linkedin',
 		link: 'https://www.linkedin.com/in/edgar-leung-aa9ba0216/',
 	},
 	{
+		id: 3,
 		iconPrefix: 'fas',
 		iconName: 'envelope',
 		platform: 'edsdbug@gmail.com',
 		link: '',
 	},
 	{
+		id: 4,
 		iconPrefix: 'fas',
 		iconName: 'phone',
 		platform: '416 822 3939',
@@ -72,4 +76,19 @@ const hobbyLinks = [
 	},
 ];
 
-export { contacts, links, hobbyLinks };
+const certificates = [
+	{
+		id: 1,
+		name: '',
+		description: '',
+		url: '',
+	},
+	{
+		id: 2,
+		name: '',
+		description: '',
+		url: '',
+	},
+];
+
+export { contacts, links, hobbyLinks, certificates };
