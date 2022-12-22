@@ -80,12 +80,14 @@ const certificates = [
 	{
 		id: 1,
 		name: '',
+		pic: '',
 		description: '',
 		url: '',
 	},
 	{
 		id: 2,
 		name: '',
+		pic: '',
 		description: '',
 		url: '',
 	},
