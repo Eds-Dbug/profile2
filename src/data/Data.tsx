@@ -94,4 +94,73 @@ const certificates = [
 	},
 ];
 
-export { contacts, links, hobbyLinks, certificates };
+const skills = [
+	{
+		id: 1,
+		iconPrefix: 'fab',
+		iconName: 'react',
+		link: '',
+	},
+	{
+		id: 2,
+		iconPrefix: 'fab',
+		iconName: 'square-js',
+		link: '',
+	},
+	{
+		id: 3,
+		iconPrefix: 'fab',
+		iconName: 'html5',
+		link: '',
+	},
+	{
+		id: 4,
+		iconPrefix: 'fab',
+		iconName: 'css',
+		link: '',
+	},
+	{
+		id: 5,
+		iconPrefix: 'fab',
+		iconName: 'bootstrap',
+		link: '',
+	},
+	{
+		id: 6,
+		iconPrefix: 'fab',
+		iconName: 'linux',
+		link: '',
+	},
+	{
+		id: 7,
+		iconPrefix: '',
+		iconName: 'TypeScript',
+		link: '',
+	},
+	{
+		id: 8,
+		iconPrefix: '',
+		iconName: 'SQL',
+		link: '',
+	},
+	{
+		id: 9,
+		iconPrefix: '',
+		iconName: 'JQuery',
+		link: '',
+	},
+	{
+		id: 10,
+		iconPrefix: '',
+		iconName: 'Express',
+		link: '',
+	},
+	{
+		id: 11,
+		iconPrefix: 'fab',
+		iconName: 'node',
+		link: '',
+	},
+];
+
+export { contacts, links, hobbyLinks, certificates, skills };

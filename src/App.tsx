@@ -15,14 +15,37 @@ import Chivalry from './routes/HobbyRoutes/Chivalry';
 import Spinner from 'react-bootstrap/Spinner';
 import Hobbies from './routes/Hobbies';
 
-import { faCheckSquare, faCoffee, faEnvelope, faPhone,  } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faCoffee, faEnvelope, faPhone, faR,  } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
 	fab,
+	faBootstrap,
+	faCss3,
 	faGithub,
+	faHtml5,
+	faLinux,
+	faNode,
+	faReact,
 	faSquareGithub,
+	faSquareJs,
 } from '@fortawesome/free-brands-svg-icons';
-library.add(fab, faGithub, faCheckSquare, faCoffee, faSquareGithub, faEnvelope, faPhone);
+library.add(
+	fab,
+	faR,
+	faGithub,
+	faCheckSquare,
+	faCoffee,
+	faSquareGithub,
+	faEnvelope,
+	faPhone,
+	faReact,
+	faSquareJs,
+	faHtml5,
+	faCss3,
+	faBootstrap,
+	faLinux,
+	faNode,
+);
 
 //import NavBar from '../src/NavBar/NavBar';
 
