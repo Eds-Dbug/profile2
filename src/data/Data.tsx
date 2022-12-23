@@ -94,7 +94,7 @@ const certificates = [
 	},
 ];
 
-const skills = [
+const softwareSkills = [
 	{
 		id: 1,
 		iconPrefix: 'fab',
@@ -116,7 +116,7 @@ const skills = [
 	{
 		id: 4,
 		iconPrefix: 'fab',
-		iconName: 'css',
+		iconName: 'css3',
 		link: '',
 	},
 	{
@@ -181,4 +181,4 @@ const skills = [
 	},
 ];
 
-export { contacts, links, hobbyLinks, certificates, skills };
+export { contacts, links, hobbyLinks, certificates, softwareSkills };
