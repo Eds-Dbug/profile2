@@ -161,6 +161,24 @@ const skills = [
 		iconName: 'node',
 		link: '',
 	},
+	{
+		id: 12,
+		iconPrefix: 'fab',
+		iconName: 'php',
+		link: '',
+	},
+	{
+		id: 13,
+		iconPrefix: 'fab',
+		iconName: 'youtube',
+		link: '',
+	},
+	{
+		id: 14,
+		iconPrefix: 'fas',
+		iconName: 'vial',
+		link: '',
+	},
 ];
 
 export { contacts, links, hobbyLinks, certificates, skills };
