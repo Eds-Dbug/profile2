@@ -1,4 +1,5 @@
 import Header from "../partials/Header";
+import '../styles/routes/skills.scss';
 import { softwareSkills } from '../data/Data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
@@ -9,7 +10,7 @@ export default function Skills() {
     const fullUpperCaseName = skill.iconName.toUpperCase();
 
     return (
-			<section className="card skills__software__item" key={skill.id}>
+			<section className="card text-center skills__software__body__item" key={skill.id}>
 				<div className="card-body">
 					{skill.iconPrefix ? (
 						<FontAwesomeIcon
@@ -20,7 +21,7 @@ export default function Skills() {
 							]}
 						/>
 					) : (
-						<h6 className="skills__software__item--title">{fullUpperCaseName}</h6>
+						<h6 className="skills__software__body__item--title">{fullUpperCaseName}</h6>
 					)}
 				</div>
 				<div className="card-footer">{upperCaseName}</div>
@@ -29,12 +30,14 @@ export default function Skills() {
   });
 
   return (
-		<div>
+		<>
 			<Header title="Skills" />
-			<section className="card skills__software">
-				<h2 className="card-header">Software Skills</h2>
-				<div className="card-body">{skillsMap}</div>
-			</section>
-		</div>
+			<div className="skills">
+				<section className="card skills__software">
+					<h2 className="card-header">Software Skills</h2>
+					<div className="card-body skills__software__body">{skillsMap}</div>
+				</section>
+			</div>
+		</>
 	);
 }

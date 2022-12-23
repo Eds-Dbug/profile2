@@ -1,0 +1,21 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.skills {
+  @include flex($d: column, $i: center);
+  &__software {
+    @include flex($c:center);
+    text-align: center;
+    width: 90%;
+    &__body {
+      @include flex;
+      flex-wrap: wrap;
+      &__item {
+        width: 125px;
+        height: 105px;
+        margin: 4px;
+      }
+    }
+  
+  }
+}
