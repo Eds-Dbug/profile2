@@ -7,6 +7,7 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 export default function Skills() {
   const skillsMap = softwareSkills.map((skill) => {
     const upperCaseName = skill.iconName.charAt(0).toUpperCase() + skill.iconName.slice(1);
+		const upperCaseSkillName = skill.skillName.toUpperCase();
     const fullUpperCaseName = skill.iconName.toUpperCase();
 
     return (
@@ -30,7 +31,7 @@ export default function Skills() {
 					)}
 				</div>
 				<div className="card-footer skills__software__body__item--footer">
-					{fullUpperCaseName}
+					{upperCaseSkillName}
 				</div>
 			</section>
 		);
