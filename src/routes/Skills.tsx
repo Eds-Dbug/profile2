@@ -14,7 +14,7 @@ export default function Skills() {
 				className="card text-center skills__software__body__item"
 				key={skill.id}
 			>
-				<div className="card-body ">
+				<div className="card-body skills__software__body__item--body">
 					{skill.iconPrefix ? (
 						<FontAwesomeIcon
 							className="icon"

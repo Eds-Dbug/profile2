@@ -16,11 +16,17 @@
         height: 115px;
         margin: 4px;
         
+
+        &--body {
+          @include flex($d: column, $c: center);
+          font-size: 30px;
+          color: $charleston-green;
+        }
         
         &--title {
           @include flex($d:column,$c: center);
           height: 100%;
-          background-color: $midnight-blue;
+          background-color: $charleston-green;
           padding: 1px;
           border-radius: 50%;
           color: $bone;
@@ -28,6 +34,7 @@
 
         &--footer {
           font-weight: 600;
+          color: $charleston-green;
         }
       }
     }
