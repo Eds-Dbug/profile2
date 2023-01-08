@@ -21,7 +21,6 @@ export default function Skills() {
 			>
 				<div className="card-body btn skills__software__body__item--body">
 					<a
-						
 						onClick={() => routeChange(skill.link)}
 					>
 						{skill.iconPrefix ? (
