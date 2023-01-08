@@ -186,6 +186,13 @@ const softwareSkills = [
 		skillName: 'youtube api',
 		link: '',
 	},
+	{
+		id: 14,
+		iconPrefix: 'fab',
+		iconName: 'java',
+		skillName: 'Java',
+		link: '',
+	},
 ];
 
 export { contacts, links, hobbyLinks, certificates, softwareSkills };

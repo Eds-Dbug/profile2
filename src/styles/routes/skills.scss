@@ -20,16 +20,16 @@
         &--body {
           @include flex($d: column, $c: center);
           font-size: 30px;
-          color: $charleston-green;
+          color: $deep-jungle-green;
         }
         
         &--title {
           @include flex($d:column,$c: center);
           height: 100%;
-          background-color: $charleston-green;
+          background-color: $deep-jungle-green;
           padding: 1px;
           border-radius: 50%;
-          color: $bone;
+          color: white;
         }
 
         &--footer {
