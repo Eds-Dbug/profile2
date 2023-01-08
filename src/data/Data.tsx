@@ -100,7 +100,7 @@ const softwareSkills = [
 		iconPrefix: 'fab',
 		iconName: 'react',
 		skillName: 'React',
-		link: '',
+		link: 'https://www.google.com/search?q=react&sxsrf=AJOqlzVNDzmAdQ-KcIpq2QlSpEPieKapIA%3A1673212485494&source=hp&ei=RTK7Y62zG620qtsP_q-m0As&iflsig=AK50M_UAAAAAY7tAVSns8nrVzdToyTil17IcHFOjlijl&ved=0ahUKEwjt6dCe8rj8AhUtmmoFHf6XCboQ4dUDCAo&uact=5&oq=react&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyBAgAEEMyBQgAEJECMgQIABBDMgUIABCRAjIKCAAQsQMQgwEQQzIHCAAQsQMQQzIKCAAQsQMQgwEQQzoHCCMQ6gIQJzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6CgguELEDEIMBEEM6CgguEMcBENEDEEM6CgguEIMBELEDEEM6CwgAEIAEELEDEIMBOgUIABCABDoLCC4Q1AIQsQMQgAQ6CAgAELEDEIMBOhEILhCDARDHARCxAxDRAxCABDoLCC4QgAQQsQMQgwE6EQguEIAEELEDEIMBEMcBENEDUMExWKFEYOlGaANwAHgBgAGxAogBqAiSAQcxLjYuMC4xmAEAoAEBsAEK&sclient=gws-wiz',
 	},
 	{
 		id: 2,

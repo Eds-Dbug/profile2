@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 export default function Skills() {
+	const routeChange = (url: string) => {
+		window.open(url);
+	}
+
   const skillsMap = softwareSkills.map((skill) => {
     const upperCaseName = skill.iconName.charAt(0).toUpperCase() + skill.iconName.slice(1);
 		const upperCaseSkillName = skill.skillName.toUpperCase();
@@ -15,20 +19,25 @@ export default function Skills() {
 				className="card text-center skills__software__body__item"
 				key={skill.id}
 			>
-				<div className="card-body skills__software__body__item--body">
-					{skill.iconPrefix ? (
-						<FontAwesomeIcon
-							className="icon"
-							icon={[
-								skill.iconPrefix as IconPrefix,
-								skill.iconName as IconName,
-							]}
-						/>
-					) : (
-						<h6 className="skills__software__body__item--title">
-							{fullUpperCaseName}
-						</h6>
-					)}
+				<div className="card-body btn skills__software__body__item--body">
+					<a
+						
+						onClick={() => routeChange(skill.link)}
+					>
+						{skill.iconPrefix ? (
+							<FontAwesomeIcon
+								className="icon"
+								icon={[
+									skill.iconPrefix as IconPrefix,
+									skill.iconName as IconName,
+								]}
+							/>
+						) : (
+							<h6 className="skills__software__body__item--title">
+								{fullUpperCaseName}
+							</h6>
+						)}
+					</a>
 				</div>
 				<div className="card-footer skills__software__body__item--footer">
 					{upperCaseSkillName}

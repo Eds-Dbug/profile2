@@ -16,11 +16,14 @@
         height: 115px;
         margin: 4px;
         
-
         &--body {
           @include flex($d: column, $c: center);
           font-size: 30px;
-          color: $deep-jungle-green;
+          
+          a {
+            text-decoration: none;
+            color: $deep-jungle-green;
+          }
         }
         
         &--title {
@@ -33,7 +36,7 @@
         }
 
         &--footer {
-          color: $charleston-green;
+          
           font-size: small;
           font-weight: 600;
         }
