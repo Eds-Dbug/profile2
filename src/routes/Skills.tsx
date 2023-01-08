@@ -29,7 +29,9 @@ export default function Skills() {
 						</h6>
 					)}
 				</div>
-				<div className="card-footer">{fullUpperCaseName}</div>
+				<div className="card-footer skills__software__body__item--footer">
+					{fullUpperCaseName}
+				</div>
 			</section>
 		);
   });

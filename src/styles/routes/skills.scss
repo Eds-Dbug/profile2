@@ -7,15 +7,15 @@
     @include flex($c:center);
     margin-top: 26px;
     text-align: center;
-    width: 91%;
+    width: 92%;
     &__body {
       @include flex;
       flex-wrap: wrap;
       &__item {
-        width: 127px;
+        width: 128px;
         height: 115px;
         margin: 4px;
-        font-size: medium;
+        
         
         &--title {
           @include flex($d:column,$c: center);
@@ -24,6 +24,10 @@
           padding: 1px;
           border-radius: 50%;
           color: $bone;
+        }
+
+        &--footer {
+          font-weight: 600;
         }
       }
     }
