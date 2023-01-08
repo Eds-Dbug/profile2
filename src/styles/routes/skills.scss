@@ -16,8 +16,14 @@
         height: 115px;
         margin: 4px;
         font-size: medium;
+        
         &--title {
-          background-color: blue;
+          @include flex($d:column,$c: center);
+          height: 100%;
+          background-color: $midnight-blue;
+          padding: 1px;
+          border-radius: 50%;
+          color: $bone;
         }
       }
     }
