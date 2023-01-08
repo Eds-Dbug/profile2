@@ -104,7 +104,7 @@ const softwareSkills = [
 	{
 		id: 2,
 		iconPrefix: 'fab',
-		iconName: 'square-js',
+		iconName: 'js',
 		link: '',
 	},
 	{
@@ -173,12 +173,7 @@ const softwareSkills = [
 		iconName: 'youtube',
 		link: '',
 	},
-	{
-		id: 14,
-		iconPrefix: 'fas',
-		iconName: 'vial',
-		link: '',
-	},
+	
 ];
 
 export { contacts, links, hobbyLinks, certificates, softwareSkills };

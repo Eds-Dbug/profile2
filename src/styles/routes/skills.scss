@@ -7,14 +7,18 @@
     @include flex($c:center);
     margin-top: 26px;
     text-align: center;
-    width: 90%;
+    width: 91%;
     &__body {
       @include flex;
       flex-wrap: wrap;
       &__item {
-        width: 125px;
-        height: 105px;
+        width: 127px;
+        height: 115px;
         margin: 4px;
+        font-size: medium;
+        &--title {
+          background-color: blue;
+        }
       }
     }
   

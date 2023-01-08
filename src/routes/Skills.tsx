@@ -10,8 +10,11 @@ export default function Skills() {
     const fullUpperCaseName = skill.iconName.toUpperCase();
 
     return (
-			<section className="card text-center skills__software__body__item" key={skill.id}>
-				<div className="card-body">
+			<section
+				className="card text-center skills__software__body__item"
+				key={skill.id}
+			>
+				<div className="card-body ">
 					{skill.iconPrefix ? (
 						<FontAwesomeIcon
 							className="icon"
@@ -21,10 +24,12 @@ export default function Skills() {
 							]}
 						/>
 					) : (
-						<h6 className="skills__software__body__item--title">{fullUpperCaseName}</h6>
+						<h6 className="skills__software__body__item--title">
+							{fullUpperCaseName}
+						</h6>
 					)}
 				</div>
-				<div className="card-footer">{upperCaseName}</div>
+				<div className="card-footer">{fullUpperCaseName}</div>
 			</section>
 		);
   });
