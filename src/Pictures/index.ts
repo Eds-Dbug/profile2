@@ -1,7 +1,7 @@
 import JS_AlGO_Cert from './JS Algorithms and Data Structures.png';
 import RESPONSIVE_WEB_DESIGN from './Responsive Web Design Cert.png';
 import ME from './ME.jpg';
-import BAY from './BAY.jpg';
+import BAY from './Bay.jpg';
 import IMAGE_SEARCH_APP from './Image_Search_App.png';
 import IN_PROGRESS from './In_Progress.jpg';
 import NIAGRA from './Niagra.jpg';
