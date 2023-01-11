@@ -257,4 +257,4 @@ const projectData = [
 	},
 ];
 
-export { contacts, links, hobbyLinks, certificates, softwareSkills };
+export { contacts, links, hobbyLinks, certificates, softwareSkills,projectData };
