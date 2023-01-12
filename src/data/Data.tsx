@@ -198,7 +198,7 @@ const softwareSkills = [
 const projectData = [
 	{
 		id: 'scheduler_app',
-		pic: "",
+		pic: "sadad",
 		link: 'https://github.com/Eds-Dbug/scheduler',
 		description:
 			'An app that allows for the creation of meetings between interviewers and students',
@@ -253,6 +253,7 @@ const projectData = [
 	{
 		id: 'In Progress',
 		pic: IN_PROGRESS,
+    link: 'https://codepen.io/TeeJip/full/qBmvwWX',
 		description: 'Work in Progress',
 	},
 ];
