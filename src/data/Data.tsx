@@ -198,7 +198,7 @@ const softwareSkills = [
 const projectData = [
 	{
 		id: 'scheduler_app',
-		pic: "sadad",
+		pic: IN_PROGRESS,
 		link: 'https://github.com/Eds-Dbug/scheduler',
 		description:
 			'An app that allows for the creation of meetings between interviewers and students',
@@ -249,12 +249,6 @@ const projectData = [
 		pic: RANDOM_QUOTE_MACHINE,
 		link: 'https://codepen.io/TeeJip/full/qBmvwWX',
 		description: 'A Quote machine that generates random quotes',
-	},
-	{
-		id: 'In Progress',
-		pic: IN_PROGRESS,
-    link: 'https://codepen.io/TeeJip/full/qBmvwWX',
-		description: 'Work in Progress',
 	},
 ];
 

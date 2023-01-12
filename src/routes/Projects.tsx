@@ -1,63 +1,65 @@
+import { projectData } from '../data/Data';
+import '../styles/routes/projects.scss';
+import Header from '../partials/Header';
+
 export default function Projects() {
 	{
 		/**grid for mapping */
 	}
-  interface project {
-    id?: string,
-    pic?: string,
-    link: string,
-    description: string
-  }
-  interface names {
-    name: string,
-    surname: string
-  }
+	interface project {
+		id?: string;
+		pic?: string;
+		link: string;
+		description: string;
+	}
 
-  const data = [
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }, 
-    { name: 'a', surname: 'b' }
-  ]
+	interface names {
+		name: string;
+		surname: string;
+	}
 
+	const data = [
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+		{ name: 'a', surname: 'b' },
+	];
 
-  const arrayChunk = (arr: names[], n:number) => {
-    const array = arr.slice();
-    //console.log(array)
-    const chunks = [];
-    while (array.length) {
-      chunks.push(array.splice(0, n));
-      }
-    return chunks;
-  };
-	
+	const arrayChunk = (arr: project[], n: number) => {
+		const array = arr.slice();
+		const chunks = [];
+		while (array.length) {
+			chunks.push(array.splice(0, n));
+		}
+		return chunks;
+	};
 
-  return (
-		<div className='projects'>
-			{arrayChunk(data, 3).map((row, i) => (
+	return (
+		<div className="projects">
+			<Header title="Projects" />
+			{arrayChunk(projectData, 3).map((row, i) => (
 				<div key={i} className="projects__row">
-          |
-					{row.map((col, i ) => (
-            <div className="card" key={i}>
-              <img src="..." className="card-img-top" alt="..."/>
-              <div className="card-body">
-                <p className="card-text">{col.name}</p>
-                <p className="card-text">{col.surname}</p>
-              </div>
-            </div>
+					{row.map((col, i) => (
+						<div className="projects__row__item card" key={i}>
+							<a className="projects__row__item--link" href={col.link}>
+								<img
+									src={col.pic}
+									className="projects__row__item--img card-img-top"
+									alt="..."
+								/>
+							</a>
+							<div className="card-body">
+								<p className="card-text">{col.description}</p>
+							</div>
+						</div>
 					))}
 				</div>
 			))}
-      {/* {arrayChunk(data,3).map((x,i) => (
-        <div key={i} className="flex mx-auto">{
-          {x.map()}
-        }</div>
-      ))} */}
 		</div>
 	);
 }

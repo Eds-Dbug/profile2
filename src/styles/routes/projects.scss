@@ -1,0 +1,24 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.projects {
+
+  &__row {
+    @include flex($c: center);
+
+    &__item {
+      width: 30%;
+      margin: 0.5%;
+      min-height: 400px;
+
+      &--link{
+        min-height: 300px;
+      }
+
+      &--img{
+        height:100%;
+        
+      }
+    }
+  }
+}
