@@ -35,38 +35,42 @@ export default function Projects() {
 
   const arrayChunk = (arr: names[], n:number) => {
     const array = arr.slice();
-    console.log(array)
+    //console.log(array)
     const chunks = [];
     while (array.length) {
-      for (const x of array.splice(0, n)) {
-        chunks.push(
-          <div>
-            <h5>{x.name}</h5>
-            <h5>{x.surname}</h5>
-          </div>
-        )
+      // for (const x of array.splice(0, n)) {
+      //   chunks.push(
+      //     <div className='flex mx-auto'>
+      //       <span>{x.name}</span>
+      //       <span>{x.surname}</span>
+      //     </div>
+      //   )
+
+      chunks.push(array.splice(0, n));
       }
-      chunks.push('|')
-      //chunks.push(buffer)
-      // chunks.push(array.splice(0, n).map((x,i) => {
-      //   return <div key={i}>{x.name}</div>
-      // }))
-    }
-   
+      //chunks.push('|')
+
     return chunks;
   };
 	
 
   return (
 		<div>
-			{/* {arrayChunk([1,2,3], 2).map((row, i) => (
+			{arrayChunk(data, 3).map((row, i) => (
 				<div key={i} className="flex mx-auto">
-					{row.map((col, i) => (
-						<span key={i}>[{col}]</span>
+					{row.map((col, i ) => (
+            <>
+              <span key={i}>{col.name}</span>
+              <span key={i}>{col.surname}</span>
+            </>
 					))}
 				</div>
-			))} */}
-      {arrayChunk(data,3)}
+			))}
+      {/* {arrayChunk(data,3).map((x,i) => (
+        <div key={i} className="flex mx-auto">{
+          {x.map()}
+        }</div>
+      ))} */}
 		</div>
 	);
 }
