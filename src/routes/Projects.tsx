@@ -14,8 +14,11 @@ export default function Projects() {
     link: string,
     description: string
   }
+  interface names {
+    name: string,
+    surname: string
+  }
 
-  const chunkSave = [];
 
   const data = [
     { name: 'a', surname: 'b' }, 
@@ -30,7 +33,7 @@ export default function Projects() {
   ]
 
 
-  const arrayChunk = (arr: {name:string,surname:string}[], n:number) => {
+  const arrayChunk = (arr: names[], n:number) => {
     const array = arr.slice();
     console.log(array)
     const chunks = [];
