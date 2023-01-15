@@ -252,4 +252,18 @@ const projectData = [
 	},
 ];
 
+const hobbyText = [
+	{id: 1, text: `
+	<div>
+		Hello names Edgar I am a recent grad who at first hated but now
+		enjoys programming. That being said I am a avid bicyclist and
+		although I havent worked out recently I do like excercise (see my
+		hobbies section). I am an army reservist having been a war history
+		buff for many years (and wanting to have some excuse for a good
+		workout).Below I have a wealth of other hobbies and the such feel
+		free to click away at the side bar for much more
+	</div>`
+	}
+]
+
 export { contacts, links, hobbyLinks, certificates, softwareSkills,projectData };

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import {ME_BLACKWHITE} from '../Pictures'
 import '../styles/routes/home.scss';
 import Header from '../partials/Header';
 
@@ -23,7 +23,7 @@ export default function Home() {
 						</div>
 						<div className="col-md-4 ">
 							<img
-								src={require('../Pictures/ME.jpg')}
+								src={ME_BLACKWHITE}
 								className="img-fluid rounded-circle"
 								alt="..."
 							/>

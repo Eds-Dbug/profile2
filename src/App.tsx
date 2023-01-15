@@ -10,8 +10,6 @@ import Contact from './routes/Contact';
 import Certificates from './routes/Certificates';
 import Skills from './routes/Skills';
 import Cycling from './routes/HobbyRoutes/Cycling';
-import Minis from './routes/HobbyRoutes/Minis';
-import Chivalry from './routes/HobbyRoutes/Chivalry';
 import Spinner from 'react-bootstrap/Spinner';
 import Hobbies from './routes/Hobbies';
 
