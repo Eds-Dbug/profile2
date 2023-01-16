@@ -7,7 +7,7 @@ import { ME_BLACKWHITE } from '../Pictures';
 
 export default function Hobbies() {
 	return (
-		<div>
+		<>
 			<Header title="Home" />
 
 			<div className="home d-flex justify-content-center align-items-center">
@@ -33,10 +33,13 @@ export default function Hobbies() {
 					</div>
 				</div>
 			</div>
-			<HobbiesSideBar />
-			<div className='home__outlet'>
-				<Outlet />
-			</div>
-		</div>
+			<section className="home__hobbies">
+				<HobbiesSideBar />
+				<div className="home__hobbies--outlet">
+					<Outlet />
+				</div>
+			</section>
+
+		</>
 	);
 }

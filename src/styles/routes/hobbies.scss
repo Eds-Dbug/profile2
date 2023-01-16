@@ -1,4 +1,5 @@
 @import '/src/styles/variables.scss';
+@import './src/styles/mixins.scss';
 
 .Hobbies {
   
@@ -8,9 +9,14 @@
 }
 
 .home {
-  margin: 0 25px;
+  margin: 0 5%;
   
-  &__outlet {
+  &__hobbies {
+    @include flex; 
+    margin: 0 5%;
+    border: 1px solid $deep-jungle-green;
+    &__outlet {
 
+    }
   }
 }

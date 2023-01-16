@@ -18,7 +18,7 @@ export default function HobbiesSideBar() {
 
 	return (
 		<div className="row">
-			<nav className="hobbies_side_bar col-3 navbar navbar-expand-sm">
+			<nav className="hobbies_side_bar  navbar navbar-expand-sm">
 				<ul className="hobbies_side_bar__list ">{navMap}</ul>
 			</nav>
 		</div>
