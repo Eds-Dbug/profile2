@@ -39,7 +39,7 @@ const links = [
 	// },
 	{
 		id: 2,
-		name: 'About / Hobbies',
+		name: 'Home',
 		url: '/hobbies',
 	},
 	{
