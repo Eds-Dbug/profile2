@@ -1,0 +1,20 @@
+@import '/src/styles/variables.scss';
+@import './src/styles/mixins.scss';
+
+.hobbies_side_bar {
+  
+  @include flex($c: center);
+  &__list {
+    @include flex($d: column,$i: center);  
+    &--item {
+      background-color: $charleston-green;
+      border-bottom: 1px solid $btn-color;
+      width: 100%;
+      color: $btn-color;
+      text-decoration: none;
+      text-align: center;
+      font-size: 40px;
+      padding:30px;
+    }
+  }
+}

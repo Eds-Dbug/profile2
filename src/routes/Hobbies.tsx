@@ -7,7 +7,8 @@ import Header from '../partials/Header';
 export default function Hobbies() {
 	return (
 		<div>
-			<Header title='Hobbies'/>
+			<Header title='Hobbies' />
+			<HobbiesSideBar />
 		</div>
 	);
 }

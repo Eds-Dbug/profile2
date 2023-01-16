@@ -31,6 +31,8 @@ import {
 	faSquareJs,
 	faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import Minis from './routes/HobbyRoutes/Minis';
+import Chivalry from './routes/HobbyRoutes/Chivalry';
 library.add(
 	fab,
 	faR,
@@ -56,49 +58,56 @@ library.add(
 
 //import NavBar from '../src/NavBar/NavBar';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: '/',
+			element: <Root />,
+			errorElement: <ErrorPage />,
+			children: [
+				{
+					index: true,
+					element: <Home />,
+				},
+				{
+					path: 'hobbies',
+					element: <Hobbies />,
+					errorElement: <ErrorPage />,
+					children: [
+						{
+							path: 'cycling',
+							element: <Cycling />,
+						},
+						{ path: 'minis', element: <Minis /> },
+						{
+							path: 'chivalry',
+							element: <Chivalry />,
+						},
+					],
+				},
+				{
+					path: 'projects',
+					element: <Projects />,
+				},
+				{
+					path: 'certificates',
+					element: <Certificates />,
+				},
+				{
+					path: 'skills',
+					element: <Skills />,
+				},
+				{
+					path: 'contact',
+					element: <Contact />,
+				},
+			],
+		},
+	],
 	{
-		path: '/',
-		element: <Root />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				index: true,
-				element: <Home />,
-			},
-      {
-        path: 'hobbies' ,
-        element: <Hobbies/>
-      },
-			{
-				path: 'projects',
-				element: <Projects />,
-
-				errorElement: <ErrorPage />,
-				children: [
-					{
-						path: 'cycling',
-						element: <Cycling />,
-					},
-				],
-			},
-			{
-				path: 'certificates',
-				element: <Certificates />,
-			},
-			{
-				path: 'skills',
-				element: <Skills />,
-			},
-			{
-				path: 'contact',
-				element: <Contact />,
-			},
-		],
-	},
-],{
-  basename: "/",
-});
+		basename: '/',
+	}
+);
 
 
 function App() {

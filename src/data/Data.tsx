@@ -68,13 +68,18 @@ const hobbyLinks = [
 	{
 		id: 1,
 		name: 'Cycling',
-		url: '/cycling',
+		url: 'cycling',
 	},
 	{
 		id: 2,
 		name: 'Minis',
-		url: '/minis',
+		url: 'minis',
 	},
+	{
+		id: 3, 
+		name: 'Chivalry',
+		url: 'chivalry'
+	}
 ];
 
 const certificates = [
