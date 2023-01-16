@@ -1,6 +1,5 @@
 import React from 'react';
 import { hobbyLinks } from '../data/Data';
-import { Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigation/SideBarNav.scss';
 
@@ -22,7 +21,6 @@ export default function HobbiesSideBar() {
 			<nav className="hobbies_side_bar col-3 navbar navbar-expand-sm">
 				<ul className="hobbies_side_bar__list ">{navMap}</ul>
 			</nav>
-			<div className="col"><Outlet/></div>
 		</div>
 	);
 }

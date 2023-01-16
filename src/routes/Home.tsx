@@ -1,11 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router';
+import React, { useEffect } from 'react'
+//import { redirect } from 'react-router-dom';
+import { Outlet, redirect } from 'react-router';
 import {ME_BLACKWHITE} from '../Pictures'
 import '../styles/routes/home.scss';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import Header from '../partials/Header';
 
 export default function Home() {
+	useEffect(() => {
+		redirect('/hobbies');
+	},[])
+
   return (
 		<>
 			<Header title="Home" />

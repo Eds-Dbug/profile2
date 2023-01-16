@@ -40,7 +40,7 @@ const links = [
 	{
 		id: 2,
 		name: 'Home',
-		url: '/hobbies',
+		url: '/home',
 	},
 	{
 		id: 3,

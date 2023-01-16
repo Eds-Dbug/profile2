@@ -67,7 +67,7 @@ const router = createBrowserRouter(
 			children: [
 
 				{
-					path: 'hobbies',
+					path: 'home',
 					element: <Hobbies />,
 					errorElement: <ErrorPage />,
 					children: [
