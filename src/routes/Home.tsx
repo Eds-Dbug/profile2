@@ -2,12 +2,14 @@ import React from 'react'
 import { Outlet } from 'react-router';
 import {ME_BLACKWHITE} from '../Pictures'
 import '../styles/routes/home.scss';
+import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import Header from '../partials/Header';
 
 export default function Home() {
   return (
 		<>
 			<Header title="Home" />
+			<HobbiesSideBar/>
 			<div className="home d-flex justify-content-center align-items-center">
 				<div className="home__block card ">
 					<div className="row g-0 ">
