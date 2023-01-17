@@ -3,15 +3,14 @@ import '../../styles/Hobbies/Cycling.scss';
 import {IN_PROGRESS} from '../../Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
+import { Outlet } from 'react-router';
 
 export default function Cycling() {
 	
   return (
 		<div className="cycling">
 			<div className="cycling__carousel">
-				<Carousel
-					showArrows={true}
-				>
+				<Carousel showArrows={true}>
 					{/* replace divs with mapping so need to do data */}
 					<div>
 						<img src={IN_PROGRESS} />
@@ -29,7 +28,10 @@ export default function Cycling() {
 			</div>
 			<div className="cycling__trips">
 				{/* Need another navbar and cycling trips */}
-				<CyclingNavBar/>
+				<CyclingNavBar />
+				<div>
+					<Outlet />
+				</div>
 			</div>
 		</div>
 	);
