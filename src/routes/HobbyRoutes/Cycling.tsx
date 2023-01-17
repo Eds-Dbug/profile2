@@ -11,6 +11,7 @@ export default function Cycling() {
 				<Carousel
 					showArrows={true}
 				>
+					{/* replace divs with mapping so need to do data */}
 					<div>
 						<img src={IN_PROGRESS} />
 						<p className="legend">Legend 1</p>
@@ -25,7 +26,9 @@ export default function Cycling() {
 					</div>
 				</Carousel>
 			</div>
-			<div className="cycling__trips"></div>
+			<div className="cycling__trips">
+				{/* Need another navbar and cycling trips */}
+			</div>
 		</div>
 	);
 }

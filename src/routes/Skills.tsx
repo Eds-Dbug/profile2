@@ -1,5 +1,7 @@
 import Header from "../partials/Header";
 import '../styles/routes/skills.scss';
+import '../styles/routes/certifications.scss';
+import { certificates } from '../data/Data';
 import { softwareSkills } from '../data/Data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
@@ -10,7 +12,6 @@ export default function Skills() {
 	}
 
   const skillsMap = softwareSkills.map((skill) => {
-    const upperCaseName = skill.iconName.charAt(0).toUpperCase() + skill.iconName.slice(1);
 		const upperCaseSkillName = skill.skillName.toUpperCase();
     const fullUpperCaseName = skill.iconName.toUpperCase();
 

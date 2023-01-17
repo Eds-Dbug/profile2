@@ -3,7 +3,6 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Root from './routes/Root';
-import Home from './routes/Home';
 import Projects from './routes/Projects';
 import ErrorPage from './error/ErrorPage';
 import Contact from './routes/Contact';
