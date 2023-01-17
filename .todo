@@ -4,6 +4,9 @@
 - make assets folder for pictures and data
 - create all the nested compnents for bike trips
 - need active navbar for the new navigation links
+- style home page
+- rename the hobbies toggle properly
+ 
 backend hosting:
 - rails
 - google it!
