@@ -31,15 +31,29 @@ export default function Hobbies() {
 					</div>
 				</div>
 			</div>
-			
-			<section className="home__hobbies">
-				<div className="home__hobbies--sidebar">
-					<HobbiesSideBar />
-				</div>
-				<div className="home__hobbies--outlet">
-					<Outlet />
-				</div>
-			</section>
+			<p>
+				<button
+					className="btn btn-primary"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseWidthExample"
+					aria-expanded="false"
+					aria-controls="collapseWidthExample"
+				>
+					Toggle width collapse
+				</button>
+			</p>
+
+			<div className="collapse " id="collapseWidthExample">
+				<section className="home__hobbies">
+					<div className="home__hobbies--sidebar">
+						<HobbiesSideBar />
+					</div>
+					<div className="home__hobbies--outlet">
+						<Outlet />
+					</div>
+				</section>
+			</div>
 		</>
 	);
 }
