@@ -32,6 +32,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Minis from './routes/HobbyRoutes/Minis';
 import Chivalry from './routes/HobbyRoutes/Chivalry';
+import City from './routes/HobbyRoutes/CyclingRoutes/City';
+import GeorgianBay from './routes/HobbyRoutes/CyclingRoutes/GeorgianBay';
+import Niagra from './routes/HobbyRoutes/CyclingRoutes/Niagra';
 library.add(
 	fab,
 	faR,
@@ -64,7 +67,6 @@ const router = createBrowserRouter(
 			element: <Root />,
 			errorElement: <ErrorPage />,
 			children: [
-
 				{
 					path: 'home',
 					element: <Hobbies />,
@@ -73,6 +75,12 @@ const router = createBrowserRouter(
 						{
 							path: 'cycling',
 							element: <Cycling />,
+
+							children: [
+								{ path: 'City', element: <City /> },
+								{ path: 'Niagra', element: <Niagra /> },
+								{ path: 'GeorgianBay', element: <GeorgianBay /> },
+							],
 						},
 						{ path: 'minis', element: <Minis /> },
 						{
