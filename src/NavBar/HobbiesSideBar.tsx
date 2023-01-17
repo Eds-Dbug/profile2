@@ -6,7 +6,6 @@ import '../styles/Navigation/SideBarNav.scss';
 export default function HobbiesSideBar() {
 	const navMap = hobbyLinks.map((link: any) => {
 		return (
-
 			<NavLink
 				className="hobbies_side_bar__list--item "
 				to={link.url}
@@ -18,8 +17,6 @@ export default function HobbiesSideBar() {
 	});
 
 	return (
-
 		<ul className="hobbies_side_bar__list ">{navMap}</ul>
-
 	);
 }
