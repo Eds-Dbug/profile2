@@ -2,7 +2,10 @@
 - use css modules put all scss in components
 - make Component folder capital
 - make assets folder for pictures and data
-
+- create all the nested compnents for bike trips
+- stick an image of work in progress for other divs for now
+- update about
+- create dropdown for hobbies section
 backend hosting:
 - rails
 - google it!
