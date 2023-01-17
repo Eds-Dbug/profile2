@@ -1,11 +1,17 @@
 - change skills and certificates to expertise.
+- merge skills and certificates into expertise.
 - use css modules put all scss in components
 - make Component folder capital
 - make assets folder for pictures and data
-- create all the nested compnents for bike trips
-- need active navbar for the new navigation links
-- style home page
+
+
+- hobby section will need to have all images same size as carousel
+- carousel should move on its own.
+
+- need green border About section
 - rename the hobbies toggle properly
+- Update carousel images for cycling hobby
+- update the description for each carousel slide 
  
 backend hosting:
 - rails
