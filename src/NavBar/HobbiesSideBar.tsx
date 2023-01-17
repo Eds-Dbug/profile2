@@ -7,7 +7,7 @@ export default function HobbiesSideBar() {
 	const navMap = hobbyLinks.map((link: any) => {
 		return (
 			<NavLink
-				className="hobbies_side_bar__list--item "
+				className="hobbies_side_bar__list--item btn btn-outline-success"
 				to={link.url}
 				key={link.id}
 			>
@@ -16,7 +16,5 @@ export default function HobbiesSideBar() {
 		);
 	});
 
-	return (
-		<ul className="hobbies_side_bar__list ">{navMap}</ul>
-	);
+	return <ul className="hobbies_side_bar__list ">{navMap}</ul>;
 }

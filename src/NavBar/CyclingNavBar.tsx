@@ -5,7 +5,7 @@ import styles from './_CyclingNavbar.module.scss';
 export default function CyclingNavBar() {
 	const navMap = bikeTripLinks.map((link: any) => {
 		return (
-			<NavLink className={styles.cycling_bar_item} to={link.url} key={link.id}>
+			<NavLink className={`${styles.cycling_bar_item} btn btn-outline-success`} to={link.url} key={link.id}>
 				{link.name}
 			</NavLink>
 		);
