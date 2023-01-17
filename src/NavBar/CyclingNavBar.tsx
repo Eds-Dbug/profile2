@@ -1,21 +1,15 @@
-import React from 'react';
-import { CyclingText } from '../data/Data';
+import { hobbyLinks } from '../data/Data';
 import { NavLink } from 'react-router-dom';
-import '../styles/Navigation/SideBarNav.scss';
-import * as cyclingStyles from './_CyclingNavbar.module.scss';
+import styles from './_CyclingNavbar.module.scss';
 
 export default function CyclingNavBar() {
-	const navMap = CyclingText.map((link: any) => {
+	const navMap = hobbyLinks.map((link: any) => {
 		return (
-			<NavLink
-				className="cycling_bar__list--item "
-				to={link.url}
-				key={link.id}
-			>
+			<NavLink className={styles.cycling_bar__item} to={link.url} key={link.id}>
 				{link.name}
 			</NavLink>
 		);
 	});
 
-	return <ul className={cyclingStyles.class}>{navMap}</ul>;
+	return <ul className={styles.cycling_bar__list}>{navMap}</ul>;
 }

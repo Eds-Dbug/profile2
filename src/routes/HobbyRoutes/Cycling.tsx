@@ -1,4 +1,4 @@
-import React from 'react';
+import CyclingNavBar from '../../NavBar/CyclingNavBar';
 import '../../styles/Hobbies/Cycling.scss';
 import {IN_PROGRESS} from '../../Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
@@ -28,6 +28,7 @@ export default function Cycling() {
 			</div>
 			<div className="cycling__trips">
 				{/* Need another navbar and cycling trips */}
+				<CyclingNavBar/>
 			</div>
 		</div>
 	);

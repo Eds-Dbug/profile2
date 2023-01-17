@@ -5,6 +5,7 @@ import {ME_BLACKWHITE} from '../Pictures'
 import '../styles/routes/home.scss';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import Header from '../partials/Header';
+import CyclingNavBar from '../NavBar/CyclingNavBar';
 
 export default function Home() {
 	useEffect(() => {
@@ -35,10 +36,11 @@ export default function Home() {
 								alt="..."
 							/>
 						</div>
-						<div>
+						<div className='home__outlet'>
 							<Outlet />
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</>

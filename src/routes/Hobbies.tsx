@@ -1,4 +1,3 @@
-import React from 'react';
 import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import '../styles/routes/hobbies.scss';
@@ -32,9 +31,10 @@ export default function Hobbies() {
 					</div>
 				</div>
 			</div>
+			
 			<section className="home__hobbies">
 				<div className="home__hobbies--sidebar">
-				<HobbiesSideBar />
+					<HobbiesSideBar />
 				</div>
 				<div className="home__hobbies--outlet">
 					<Outlet />

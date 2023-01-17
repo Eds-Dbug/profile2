@@ -1,3 +1,21 @@
-.class {
-  color: red;
+@import '/src/styles/variables.scss';
+@import './src/styles/mixins.scss';
+
+.cycling_bar__list {
+  @include flex;
+  padding: 0;
+  list-style-type: none;
 }
+.cycling_bar__item {
+  border-style:  none solid;
+  border-width: 1px;
+  border-color: $btn-color;
+  width: 100%;
+  background-color: $charleston-green;
+ 
+  color: $btn-color;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+}
+  
