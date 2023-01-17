@@ -1,5 +1,7 @@
 import JS_AlGO_Cert from './JS Algorithms and Data Structures.png';
 import RESPONSIVE_WEB_DESIGN from './Responsive Web Design Cert.png';
+import GIANT_BIKE from './giant.jpg';
+import MOUSTACHE_BIKE from './moustache.jpg'
 import ME from './ME.jpg';
 import BAY from './Bay.jpg';
 import IMAGE_SEARCH_APP from './Image_Search_App.png';
@@ -14,4 +16,4 @@ import TRIBUTE from './Tribute_Page_Test.png';
 import VIDEO_SEARCH_APP from './Videos_Search_App.png';
 import ME_BLACKWHITE from './me black and white.jpg';
 
-export {ME_BLACKWHITE, JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN, ME, BAY, IMAGE_SEARCH_APP, IN_PROGRESS, NIAGRA, EDDIES_MUSIC, RANDOM_QUOTE_MACHINE,SEASONS_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, VIDEO_SEARCH_APP };
+export {GIANT_BIKE, MOUSTACHE_BIKE, ME_BLACKWHITE, JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN, ME, BAY, IMAGE_SEARCH_APP, IN_PROGRESS, NIAGRA, EDDIES_MUSIC, RANDOM_QUOTE_MACHINE,SEASONS_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, VIDEO_SEARCH_APP };

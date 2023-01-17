@@ -18,7 +18,7 @@ export default function Certificates() {
 				</div>
 			</div>
 		);
-	}) ;
+	});
 
   return (
 		<div className="certifications">
