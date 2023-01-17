@@ -82,6 +82,24 @@ const hobbyLinks = [
 	}
 ];
 
+const bikeTripLinks = [
+	{
+		id: 1,
+		name: 'fun',
+		url: 'city',
+	},
+	{
+		id: 2,
+		name: 'Niagra',
+		url: 'Niagra',
+	},
+	{
+		id: 2,
+		name: 'Bay',
+		url: 'GeorgianBay',
+	},
+];
+
 const certificates = [
 	{
 		id: 'JS_Algorithms_Data_Structures_Cert',
