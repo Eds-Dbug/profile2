@@ -22,8 +22,8 @@
     }
     
     &--outlet {
-      width: 70%;
-      border: 11px solid red;
+      min-width: 70%;
+      min-height: 500px;
     }
   }
 }
