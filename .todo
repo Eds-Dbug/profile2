@@ -3,8 +3,7 @@
 - make Component folder capital
 - make assets folder for pictures and data
 - create all the nested compnents for bike trips
-- stick an image of work in progress for other divs for now
-- update about
+- need active navbar for the new navigation links
 - create dropdown for hobbies section
 backend hosting:
 - rails

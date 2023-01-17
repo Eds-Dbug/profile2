@@ -1,18 +1,17 @@
 @import '/src/styles/variables.scss';
 @import './src/styles/mixins.scss';
 
-.cycling_bar__list {
+.cycling_bar_list {
   @include flex;
   padding: 0;
   list-style-type: none;
 }
-.cycling_bar__item {
+.cycling_bar_item {
   border-style:  none solid;
   border-width: 1px;
   border-color: $btn-color;
   width: 100%;
   background-color: $charleston-green;
- 
   color: $btn-color;
   text-decoration: none;
   text-align: center;

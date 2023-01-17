@@ -100,6 +100,10 @@ const bikeTripLinks = [
 	},
 ];
 
+const cyclingData = [
+	{}
+]
+
 const certificates = [
 	{
 		id: 'JS_Algorithms_Data_Structures_Cert',

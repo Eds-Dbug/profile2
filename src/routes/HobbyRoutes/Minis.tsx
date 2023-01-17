@@ -1,7 +1,10 @@
-import React from 'react'
+
+import { IN_PROGRESS } from '../../Pictures';
 
 export default function Minis() {
   return (
-    <div>Minis</div>
-  )
+		<div>
+			<img src={IN_PROGRESS} />
+		</div>
+	);
 }
