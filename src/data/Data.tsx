@@ -85,7 +85,7 @@ const hobbyLinks = [
 const bikeTripLinks = [
 	{
 		id: 1,
-		name: 'fun',
+		name: 'City',
 		url: 'city',
 	},
 	{
@@ -349,6 +349,7 @@ const CyclingText = [
 ];
 
 export {
+	bikeTripLinks,
 	CyclingText,
 	contacts,
 	links,
