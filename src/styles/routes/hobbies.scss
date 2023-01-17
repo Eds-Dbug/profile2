@@ -15,8 +15,15 @@
     @include flex; 
     margin: 0 5%;
     border: 1px solid $deep-jungle-green;
-    &__outlet {
 
+    &--sidebar {
+      width: 30%;
+      
+    }
+    
+    &--outlet {
+      width: 70%;
+      border: 11px solid red;
     }
   }
 }

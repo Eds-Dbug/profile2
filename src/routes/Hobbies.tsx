@@ -34,12 +34,13 @@ export default function Hobbies() {
 				</div>
 			</div>
 			<section className="home__hobbies">
+				<div className="home__hobbies--sidebar">
 				<HobbiesSideBar />
+				</div>
 				<div className="home__hobbies--outlet">
 					<Outlet />
 				</div>
 			</section>
-
 		</>
 	);
 }

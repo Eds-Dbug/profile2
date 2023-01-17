@@ -3,18 +3,22 @@
 
 .hobbies_side_bar {
   
-  @include flex($c: center);
   &__list {
-    @include flex($d: column,$i: center);  
+    
+    @include flex($d: column, $i: center);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
     &--item {
+      width: 100%;
       background-color: $charleston-green;
       border-bottom: 1px solid $btn-color;
-      width: 100%;
       color: $btn-color;
       text-decoration: none;
       text-align: center;
       font-size: 40px;
-      padding:30px;
+      
     }
   }
 }
