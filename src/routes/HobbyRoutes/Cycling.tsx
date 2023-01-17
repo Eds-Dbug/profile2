@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/Hobbies/Cycling.scss';
-import {IN_PROGRESS} from '../../Pictures'
+import {IN_PROGRESS} from '../../Pictures';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
 
 export default function Cycling() {
@@ -9,7 +10,6 @@ export default function Cycling() {
 			<div className="cycling__carousel">
 				<Carousel
 					showArrows={true}
-
 				>
 					<div>
 						<img src={IN_PROGRESS} />
