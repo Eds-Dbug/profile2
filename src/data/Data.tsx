@@ -38,27 +38,22 @@ const links = [
 	// 	url: '/',
 	// },
 	{
-		id: 2,
+		id: 1,
 		name: 'Home',
 		url: '/home',
 	},
 	{
-		id: 3,
+		id: 2,
 		name: 'Projects',
 		url: '/projects',
 	},
 	{
+		id: 3,
+		name: 'Expertise',
+		url: '/expertise'
+	},
+	{
 		id: 4,
-		name: 'Skills',
-		url: '/skills',
-	},
-	{
-		id: 5,
-		name: 'Certificates',
-		url: '/certificates',
-	},
-	{
-		id: 6,
 		name: 'Contact',
 		url: '/contact',
 	},
