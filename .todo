@@ -4,7 +4,6 @@
 - make Component folder capital
 - make assets folder for pictures and data
 
-
 - hobby section will need to have all images same size as carousel
 - carousel should move on its own.
 
@@ -12,9 +11,6 @@
 - rename the hobbies toggle properly
 - Update carousel images for cycling hobby
 - update the description for each carousel slide 
-
-- need to fix errors as well.
-
  
 backend hosting:
 - rails
