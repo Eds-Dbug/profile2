@@ -8,9 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 
 export default function Expertise() {
-  const routeChange = (url: string) => {
-		window.open(url);
-	}
+	const routeChange = (url: string) => {window.open(url);};
 
 	const certificateMap = certificates.map((cert) => {
 		return (
@@ -29,7 +27,7 @@ export default function Expertise() {
 		);
 	});
 
-  const skillsMap = softwareSkills.map((skill) => {
+	const skillsMap = softwareSkills.map((skill) => {
 		const upperCaseSkillName = skill.skillName.toUpperCase();
 		const fullUpperCaseName = skill.iconName.toUpperCase();
 
@@ -60,7 +58,7 @@ export default function Expertise() {
 				</div>
 			</section>
 		);
-  });
+	});
 
 	return (
 		<div className="">
