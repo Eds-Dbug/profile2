@@ -1,7 +1,7 @@
 import React from 'react';
 import { hobbyLinks } from '../data/Data';
 import { NavLink } from 'react-router-dom';
-import '../styles/Navigation/SideBarNav.scss';
+import './_SideBarNav.scss';
 
 export default function HobbiesSideBar() {
 	const navMap = hobbyLinks.map((link: any) => {
