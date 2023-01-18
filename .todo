@@ -1,5 +1,3 @@
-- change skills and certificates to expertise.
-- merge skills and certificates into expertise.
 - use css modules put all scss in components
 - make Component folder capital
 - make assets folder for pictures and data
