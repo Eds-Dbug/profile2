@@ -3,32 +3,13 @@ import '../styles/routes/projects.scss';
 import Header from '../partials/Header';
 
 export default function Projects() {
-	{
-		/**grid for mapping */
-	}
+
 	interface project {
 		id?: string;
 		pic?: string;
 		link: string;
 		description: string;
 	}
-
-	interface names {
-		name: string;
-		surname: string;
-	}
-
-	const data = [
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-		{ name: 'a', surname: 'b' },
-	];
 
 	const arrayChunk = (arr: project[], n: number) => {
 		const array = arr.slice();
@@ -45,8 +26,11 @@ export default function Projects() {
 			{arrayChunk(projectData, 3).map((row, i) => (
 				<div key={i} className="projects__row">
 					{row.map((col, i) => (
-						<div className="projects__row__item card" key={i}>
-							<a className="projects__row__item--link" href={col.link}>
+						<div className="projects__row__item card btn" key={i}>
+							<a
+								className="projects__row__item--link "
+								onClick={() => window.open(col.link)}
+							>
 								<img
 									src={col.pic}
 									className="projects__row__item--img card-img-top"

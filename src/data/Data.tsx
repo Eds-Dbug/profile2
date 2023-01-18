@@ -94,7 +94,7 @@ const bikeTripLinks = [
 		url: 'Niagra',
 	},
 	{
-		id: 2,
+		id: 3,
 		name: 'Bay',
 		url: 'GeorgianBay',
 	},

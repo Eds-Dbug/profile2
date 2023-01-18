@@ -28,7 +28,7 @@ export default function Cycling() {
 			</div>
 			<div className="cycling__trips">
 				{/* Need another navbar and cycling trips */}
-				<CyclingNavBar />
+					<CyclingNavBar />
 				<div>
 					<Outlet />
 				</div>

@@ -28,10 +28,8 @@ export default function Contact() {
 		}, 7000);
 	}, [textToCopy]);
 
-  const contactMap = contacts.map(contact => {
-    return (
-			<>
-				<div className=" contact__cards__card">
+  const contactMap = contacts.map(contact => (
+				<div className=" contact__cards__card" key={contact.id}>
 						<h6 className={classNames({
 							'copied': true,
 							'copied--toggled': textToCopy === contact.platform,	
@@ -56,10 +54,8 @@ export default function Contact() {
 							<h5>{contact.platform}</h5>
 						</a>
 					</div>
-				</div>
-			</>
-		);
-  });
+				</div>)
+  );
 
   return (
 		<div className="contact ps-3">
