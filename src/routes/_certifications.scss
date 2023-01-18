@@ -1,0 +1,12 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.certifications {
+  &__grid {
+    @include flex($c: center);
+    &__item {
+        width: 35%;
+        margin: 2%;
+    }
+  }
+}

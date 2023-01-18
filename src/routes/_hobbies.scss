@@ -1,0 +1,29 @@
+@import '/src/styles/variables.scss';
+@import './src/styles/mixins.scss';
+
+.Hobbies {
+  
+  &__about {
+    max-width: 600px;
+  }
+}
+
+.home {
+  margin: 0 5%;
+  
+  &__hobbies {
+    @include flex; 
+    margin: 0 5%;
+    border: 1px solid $deep-jungle-green;
+
+    &--sidebar {
+      width: 30%;
+      
+    }
+    
+    &--outlet {
+      min-width: 70%;
+      min-height: 500px;
+    }
+  }
+}

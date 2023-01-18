@@ -1,0 +1,47 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.copied {
+  visibility: hidden;
+  text-align: center;
+  &--toggled {
+    visibility: visible;
+  }
+}
+
+.contact {
+  height: 100vh;
+  margin: 0 10px;
+
+  &__title{
+    margin-top: 15vh;
+    border-radius: $header-round;
+    background-color: $camel;
+    text-align: center;
+    font-size: 300%;
+  }
+  
+  &__cards {
+    @include flex($d: row, $c: center, $i: center);
+    margin-top: 25vh;
+    
+    &__card {
+      height: 100%;
+      width: 22vw;
+      margin: 1%;
+      .body {
+        
+        a {
+          @include flex($d: column, $c: center, $i: center);
+          text-decoration: none;
+          color:$charleston-green ;
+          .icon {
+            width: 30%;
+            height: 15vh;
+          }
+          
+        }
+      }
+    }
+  }
+}
