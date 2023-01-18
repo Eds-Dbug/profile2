@@ -1,13 +1,10 @@
 import './App.css';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 import Root from './routes/Root';
 import Projects from './routes/Projects';
 import ErrorPage from './error/ErrorPage';
 import Contact from './routes/Contact';
-import Certificates from './routes/Certificates';
-import Skills from './routes/Skills';
 import Cycling from './routes/HobbyRoutes/Cycling';
 import Spinner from 'react-bootstrap/Spinner';
 import Hobbies from './routes/Hobbies';
@@ -35,6 +32,7 @@ import Chivalry from './routes/HobbyRoutes/Chivalry';
 import City from './routes/HobbyRoutes/CyclingRoutes/City';
 import GeorgianBay from './routes/HobbyRoutes/CyclingRoutes/GeorgianBay';
 import Niagra from './routes/HobbyRoutes/CyclingRoutes/Niagra';
+import Expertise from './routes/Expertise';
 library.add(
 	fab,
 	faR,
@@ -57,8 +55,6 @@ library.add(
 	faYoutube,
 	faVial
 );
-
-//import NavBar from '../src/NavBar/NavBar';
 
 const router = createBrowserRouter(
 	[
@@ -94,12 +90,8 @@ const router = createBrowserRouter(
 					element: <Projects />,
 				},
 				{
-					path: 'certificates',
-					element: <Certificates />,
-				},
-				{
-					path: 'skills',
-					element: <Skills />,
+					path: 'expertise',
+					element: <Expertise/>
 				},
 				{
 					path: 'contact',
