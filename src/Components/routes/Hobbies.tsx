@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
-import './_hobbies.scss';
+import styles from './_hobbies.module.scss';
 import Header from '../partials/Header';
 import { ME_BLACKWHITE } from 'assets/Pictures';
 
@@ -8,8 +8,8 @@ export default function Hobbies() {
 	return (
 		<>
 			<Header title="Home" />
-			<div className="home d-flex justify-content-center align-items-center">
-				<div className="home__block card ">
+			<div className={`${styles.home} d-flex justify-content-center align-items-center`}>
+				<div className={`${styles.home__block} card`}>
 					<div className="row g-0 ">
 						<div className="col-md-8">
 							<div className="card-body">
@@ -45,11 +45,11 @@ export default function Hobbies() {
 			</p>
 
 			<div className="collapse " id="collapseWidthExample">
-				<section className="home__hobbies">
-					<div className="home__hobbies--sidebar">
+				<section className={styles.home__hobbies}>
+					<div className={styles.home__hobbies__sidebar}>
 						<HobbiesSideBar />
 					</div>
-					<div className="home__hobbies--outlet">
+					<div className={styles.home__hobbies__outlet}>
 						<Outlet />
 					</div>
 				</section>
