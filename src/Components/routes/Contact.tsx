@@ -1,6 +1,6 @@
 import './_contact.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { contacts } from '../data/Data';
+import { contacts } from 'data/Data';
 import { IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { IconName } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';

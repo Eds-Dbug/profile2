@@ -1,5 +1,5 @@
 
-import { IN_PROGRESS } from '../../Pictures';
+import { IN_PROGRESS } from 'assets/Pictures';
 
 export default function Minis() {
   return (

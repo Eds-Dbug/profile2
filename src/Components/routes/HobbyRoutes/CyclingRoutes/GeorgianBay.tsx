@@ -1,4 +1,4 @@
-import { CyclingText } from '../../../data/Data';
+import { CyclingText } from 'data/Data';
 
 export default function GeorgianBay() {
 	const bayMap = CyclingText.filter((item) => item.id === 'Georgian Bay').map(
