@@ -1,21 +1,17 @@
-import React, { useEffect } from 'react'
-import { Outlet, redirect } from 'react-router';
-import {ME_BLACKWHITE} from 'assets/Pictures'
-import './_home.scss';
+import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
+import styles from './_home.module.scss';
 import Header from '../partials/Header';
+import { ME_BLACKWHITE } from 'assets/Pictures';
 
 export default function Home() {
-	useEffect(() => {
-		redirect('/hobbies');
-	},[])
-
-  return (
+	return (
 		<>
 			<Header title="Home" />
-			<HobbiesSideBar/>
-			<div className="home d-flex justify-content-center align-items-center">
-				<div className="home__block card ">
+			<div
+				className={`${styles.home} d-flex justify-content-center align-items-center`}
+			>
+				<div className={`${styles.home__block} card`}>
 					<div className="row g-0 ">
 						<div className="col-md-8">
 							<div className="card-body">
@@ -34,12 +30,31 @@ export default function Home() {
 								alt="..."
 							/>
 						</div>
-						<div className='home__outlet'>
-							<Outlet />
-						</div>
 					</div>
-					
 				</div>
+			</div>
+			<p>
+				<button
+					className="btn btn-primary"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseWidthExample"
+					aria-expanded="false"
+					aria-controls="collapseWidthExample"
+				>
+					Toggle width collapse
+				</button>
+			</p>
+
+			<div className="collapse " id="collapseWidthExample">
+				<section className={styles.home__hobbies}>
+					<div className={styles.home__hobbies__sidebar}>
+						<HobbiesSideBar />
+					</div>
+					<div className={styles.home__hobbies__outlet}>
+						<Outlet />
+					</div>
+				</section>
 			</div>
 		</>
 	);

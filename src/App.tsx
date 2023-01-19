@@ -7,7 +7,7 @@ import ErrorPage from 'Components/error/ErrorPage';
 import Contact from 'Components/routes/Contact';
 import Cycling from 'Components/routes/HobbyRoutes/Cycling';
 import Spinner from 'react-bootstrap/Spinner';
-import Hobbies from 'Components/routes/Hobbies';
+import Home from 'Components/routes/Home';
 
 import { faCheckSquare, faCoffee, faEnvelope, faPhone, faR, faVial,  } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -65,7 +65,7 @@ const router = createBrowserRouter(
 			children: [
 				{
 					path: 'home',
-					element: <Hobbies />,
+					element: <Home />,
 					errorElement: <ErrorPage />,
 					children: [
 						{
@@ -91,7 +91,7 @@ const router = createBrowserRouter(
 				},
 				{
 					path: 'expertise',
-					element: <Expertise/>
+					element: <Expertise />,
 				},
 				{
 					path: 'contact',
