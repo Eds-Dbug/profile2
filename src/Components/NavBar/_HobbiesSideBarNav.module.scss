@@ -4,7 +4,6 @@
 .hobbies_side_bar {
   
   &__list {
-    
     @include flex($d: column, $i: center);
     padding: 0;
     margin: 0;
