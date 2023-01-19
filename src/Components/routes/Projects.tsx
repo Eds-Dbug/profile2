@@ -1,5 +1,5 @@
 import { projectData } from 'data/Data';
-import './_projects.scss';
+import styles from './_projects.module.scss';
 import Header from '../partials/Header';
 
 export default function Projects() {
@@ -21,19 +21,19 @@ export default function Projects() {
 	};
 
 	return (
-		<div className="projects">
+		<div className={styles.projects}>
 			<Header title="Projects" />
 			{arrayChunk(projectData, 3).map((row, i) => (
-				<div key={i} className="projects__row">
+				<div key={i} className={styles.projects__row}>
 					{row.map((col, i) => (
-						<div className="projects__row__item card btn" key={i}>
+						<div className={`card btn ${styles.projects__row__item}`} key={i}>
 							<a
-								className="projects__row__item--link "
+								className={styles['projects__row__item--link']}
 								onClick={() => window.open(col.link)}
 							>
 								<img
 									src={col.pic}
-									className="projects__row__item--img card-img-top"
+									className={`card-img-top ${styles["projects__row__item--img"]}`}
 									alt="..."
 								/>
 							</a>

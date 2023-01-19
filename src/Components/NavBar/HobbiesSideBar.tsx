@@ -1,13 +1,13 @@
 import React from 'react';
 import { hobbyLinks } from 'data/Data';
 import { NavLink } from 'react-router-dom';
-import './_SideBarNav.scss';
+import styles from './_HobbiesSideBarNav.module.scss';
 
 export default function HobbiesSideBar() {
 	const navMap = hobbyLinks.map((link: any) => {
 		return (
 			<NavLink
-				className="hobbies_side_bar__list--item btn btn-outline-success"
+				className={`btn btn-outline-success ${styles["hobbies_side_bar__list--item"]}`}
 				to={link.url}
 				key={link.id}
 			>
@@ -16,5 +16,5 @@ export default function HobbiesSideBar() {
 		);
 	});
 
-	return <ul className="hobbies_side_bar__list ">{navMap}</ul>;
+	return <ul className={styles.hobbies_side_bar__list} >{navMap}</ul>;
 }

@@ -1,33 +1,47 @@
 @import '/src/styles/mixins.scss';
 @import '/src/styles/variables.scss';
 
+.certifications {
+  &__grid {
+    @include flex($c: center);
+
+    &__item {
+      width: 35%;
+      margin: 2%;
+    }
+  }
+}
+
 .skills {
   @include flex($d: column, $i: center);
+
   &__software {
-    @include flex($c:center);
+    @include flex($c: center);
     margin-top: 26px;
     text-align: center;
     width: 95%;
+
     &__body {
       @include flex;
       flex-wrap: wrap;
+
       &__item {
         width: 128px;
         height: 115px;
         margin: 4px;
-        
+
         &--body {
           @include flex($d: column, $c: center);
           font-size: 30px;
-          
+
           a {
             text-decoration: none;
             color: $deep-jungle-green;
           }
         }
-        
+
         &--title {
-          @include flex($d:column,$c: center);
+          @include flex($d: column, $c: center);
           height: 100%;
           background-color: $deep-jungle-green;
           padding: 1px;
@@ -36,12 +50,12 @@
         }
 
         &--footer {
-          
+
           font-size: small;
           font-weight: 600;
         }
       }
     }
-  
+
   }
 }

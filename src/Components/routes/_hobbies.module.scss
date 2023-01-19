@@ -2,7 +2,7 @@
 @import './src/styles/mixins.scss';
 
 .Hobbies {
-  
+
   &__about {
     max-width: 600px;
   }
@@ -10,18 +10,18 @@
 
 .home {
   margin: 0 5%;
-  
+
   &__hobbies {
-    @include flex; 
+    @include flex;
     margin: 0 5%;
     border: 1px solid $deep-jungle-green;
 
-    &--sidebar {
+    &__sidebar {
       width: 30%;
 
     }
-    
-    &--outlet {
+
+    &__outlet {
       min-width: 70%;
       min-height: 500px;
     }
