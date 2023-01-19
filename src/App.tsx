@@ -1,13 +1,13 @@
 import './App.css';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Root from './routes/Root';
-import Projects from './routes/Projects';
-import ErrorPage from './error/ErrorPage';
-import Contact from './routes/Contact';
-import Cycling from './routes/HobbyRoutes/Cycling';
+import Root from 'Components/routes/Root';
+import Projects from 'Components/routes/Projects';
+import ErrorPage from 'Components/error/ErrorPage';
+import Contact from 'Components/routes/Contact';
+import Cycling from 'Components/routes/HobbyRoutes/Cycling';
 import Spinner from 'react-bootstrap/Spinner';
-import Hobbies from './routes/Hobbies';
+import Hobbies from 'Components/routes/Hobbies';
 
 import { faCheckSquare, faCoffee, faEnvelope, faPhone, faR, faVial,  } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -27,12 +27,12 @@ import {
 	faSquareJs,
 	faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import Minis from './routes/HobbyRoutes/Minis';
-import Chivalry from './routes/HobbyRoutes/Chivalry';
-import City from './routes/HobbyRoutes/CyclingRoutes/City';
-import GeorgianBay from './routes/HobbyRoutes/CyclingRoutes/GeorgianBay';
-import Niagra from './routes/HobbyRoutes/CyclingRoutes/Niagra';
-import Expertise from './routes/Expertise';
+import Minis from 'Components/routes/HobbyRoutes/Minis';
+import Chivalry from 'Components/routes/HobbyRoutes/Chivalry';
+import City from 'Components/routes/HobbyRoutes/CyclingRoutes/City';
+import GeorgianBay from 'Components/routes/HobbyRoutes/CyclingRoutes/GeorgianBay';
+import Niagra from 'Components/routes/HobbyRoutes/CyclingRoutes/Niagra';
+import Expertise from 'Components/routes/Expertise';
 library.add(
 	fab,
 	faR,

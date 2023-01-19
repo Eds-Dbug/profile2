@@ -1,5 +1,5 @@
 import React from 'react';
-import { hobbyLinks } from '../data/Data';
+import { hobbyLinks } from 'data/Data';
 import { NavLink } from 'react-router-dom';
 import './_SideBarNav.scss';
 

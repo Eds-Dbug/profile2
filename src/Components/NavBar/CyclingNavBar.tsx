@@ -1,4 +1,4 @@
-import { bikeTripLinks } from '../data/Data';
+import { bikeTripLinks } from 'data/Data';
 import { NavLink } from 'react-router-dom';
 import styles from './_CyclingNavbar.module.scss';
 

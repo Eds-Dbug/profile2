@@ -1,4 +1,4 @@
-import { CyclingText } from '../../../data/Data';
+import { CyclingText } from 'data/Data';
 
 export default function Niagra() {
 	const niagraMap = CyclingText.filter((item) => item.id === 'Niagra').map(

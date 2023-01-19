@@ -1,4 +1,4 @@
-import { links } from '../data/Data';
+import { links } from 'data/Data';
 import './_ActiveNavbar.scss';
 import { NavLink } from 'react-router-dom';
 

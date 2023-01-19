@@ -1,6 +1,6 @@
 import CyclingNavBar from '../../NavBar/CyclingNavBar';
 import './_Cycling.scss';
-import {IN_PROGRESS} from '../../Pictures';
+import { IN_PROGRESS } from 'assets/Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
 import { Outlet } from 'react-router';

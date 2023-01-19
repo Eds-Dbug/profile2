@@ -1,5 +1,5 @@
 import React from 'react'
-import {links} from '../data/Data';
+import {links} from 'data/Data';
 export default function NavBar() {
 
   const navMap = links.map((link: any) => {

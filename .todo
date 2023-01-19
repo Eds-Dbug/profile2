@@ -1,7 +1,3 @@
-- use css modules put all scss in components
-- make Component folder capital
-- make assets folder for pictures and data
-
 - change all scss to modules and make it fit the appropriate components.
 - will need to combine skills and certifications scss into expertise.scss
 

@@ -2,7 +2,7 @@ import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import './_hobbies.scss';
 import Header from '../partials/Header';
-import { ME_BLACKWHITE } from '../Pictures';
+import { ME_BLACKWHITE } from 'assets/Pictures';
 
 export default function Hobbies() {
 	return (

@@ -1,4 +1,4 @@
-import { projectData } from '../data/Data';
+import { projectData } from 'data/Data';
 import './_projects.scss';
 import Header from '../partials/Header';
 

@@ -1,4 +1,4 @@
-import {CyclingText} from '../../../data/Data'
+import {CyclingText} from 'data/Data'
 
 export default function City() {
   const cityMap = CyclingText.filter((item) => item.id === 'Fun').map((item,i) => (
