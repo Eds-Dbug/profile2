@@ -2,13 +2,21 @@
 - make Component folder capital
 - make assets folder for pictures and data
 
+- change all scss to modules and make it fit the appropriate components.
+- will need to combine skills and certifications scss into expertise.scss
+
+- will need to change current home to root
+- will need to change name of hobbies to home
+
 - hobby section will need to have all images same size as carousel
 - carousel should move on its own.
-
 - need green border About section
 - rename the hobbies toggle properly
 - Update carousel images for cycling hobby
 - update the description for each carousel slide 
+- contacts Header is slightly smaller change it to match the Header of other pages
+- need to add a click on nav bar to display for hobbies section
+- add a hobbies section.
 
 - change icon for website after 
 - cors cross origin error

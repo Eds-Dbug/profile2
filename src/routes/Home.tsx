@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-//import { redirect } from 'react-router-dom';
 import { Outlet, redirect } from 'react-router';
 import {ME_BLACKWHITE} from '../Pictures'
-import '../styles/routes/home.scss';
+import './_home.scss';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import Header from '../partials/Header';
-import CyclingNavBar from '../NavBar/CyclingNavBar';
 
 export default function Home() {
 	useEffect(() => {

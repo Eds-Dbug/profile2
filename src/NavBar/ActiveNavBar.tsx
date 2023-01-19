@@ -1,5 +1,5 @@
 import { links } from '../data/Data';
-import '../styles/Navigation/ActiveNavbar.scss';
+import './_ActiveNavbar.scss';
 import { NavLink } from 'react-router-dom';
 
 export default function ActiveNavBar() {

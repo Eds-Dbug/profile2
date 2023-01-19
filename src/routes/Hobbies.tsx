@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
-import '../styles/routes/hobbies.scss';
+import './_hobbies.scss';
 import Header from '../partials/Header';
 import { ME_BLACKWHITE } from '../Pictures';
 

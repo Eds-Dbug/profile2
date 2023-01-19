@@ -1,5 +1,5 @@
 import { projectData } from '../data/Data';
-import '../styles/routes/projects.scss';
+import './_projects.scss';
 import Header from '../partials/Header';
 
 export default function Projects() {
