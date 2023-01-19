@@ -10,6 +10,10 @@
 
 .home {
   margin: 0 5%;
+  
+  &__block {
+    border-color: $btn-color;
+  }
 
   &__hobbies {
     @include flex;
