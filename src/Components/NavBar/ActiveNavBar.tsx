@@ -1,5 +1,5 @@
 import { links } from 'data/Data';
-import './_ActiveNavbar.scss';
+import styles from './_ActiveNavbar.module.scss';
 import { NavLink } from 'react-router-dom';
 
 export default function ActiveNavBar() {
@@ -16,7 +16,7 @@ export default function ActiveNavBar() {
   })
 
   return (
-    <nav className="navbar navbar-expand-sm fixed-top mb-4 main-navBar">
+    <nav className={`navbar navbar-expand-sm fixed-top mb-4 ${styles["main-navBar"]}`}>
       <ul className="navbar-nav mr">
         {navMap}
       </ul>
