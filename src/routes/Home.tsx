@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Outlet, redirect } from 'react-router';
 import {ME_BLACKWHITE} from '../Pictures'
-import '../styles/routes/home.scss';
+import './_home.scss';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import Header from '../partials/Header';
 

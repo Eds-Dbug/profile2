@@ -1,5 +1,5 @@
 import CyclingNavBar from '../../NavBar/CyclingNavBar';
-import '../../styles/Hobbies/Cycling.scss';
+import './_Cycling.scss';
 import {IN_PROGRESS} from '../../Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';

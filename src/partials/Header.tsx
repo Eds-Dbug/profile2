@@ -1,4 +1,4 @@
-import '../styles/Partials/header.scss';
+import './_header.scss';
 
 export default function Header({ title }: { title: string }) {
 	return (

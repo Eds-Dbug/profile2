@@ -1,8 +1,7 @@
 import Header from '../partials/Header';
-import '../styles/routes/certifications.scss';
 import { certificates } from '../data/Data';
-import '../styles/routes/skills.scss';
-import '../styles/routes/certifications.scss';
+import './_skills.scss';
+import './_certifications.scss';
 import { softwareSkills } from '../data/Data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';

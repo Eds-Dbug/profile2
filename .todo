@@ -3,6 +3,10 @@
 - make assets folder for pictures and data
 
 - change all scss to modules and make it fit the appropriate components.
+- will need to combine skills and certifications scss into expertise.scss
+
+- will need to change current home to root
+- will need to change name of hobbies to home
 
 - hobby section will need to have all images same size as carousel
 - carousel should move on its own.
@@ -16,7 +20,6 @@
 
 - change icon for website after 
 - cors cross origin error
-
  
 backend hosting:
 - rails
