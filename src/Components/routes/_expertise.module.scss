@@ -8,15 +8,20 @@
     &__item {
       width: 35%;
       margin: 2%;
+      padding: 0;
+      color: $charleston-green;
+      font-weight: bolder;
     }
   }
 }
 
 .skills {
   @include flex($d: column, $i: center);
+  
 
   &__software {
     @include flex($c: center);
+    border-color: $btn-color ;
     margin-top: 26px;
     text-align: center;
     width: 95%;
@@ -29,11 +34,12 @@
         width: 128px;
         height: 115px;
         margin: 4px;
-
+        
         &--body {
           @include flex($d: column, $c: center);
           font-size: 30px;
-
+          border-radius: 0;
+          border-color: none ;
           a {
             text-decoration: none;
             color: $deep-jungle-green;
