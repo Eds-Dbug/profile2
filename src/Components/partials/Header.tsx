@@ -1,9 +1,9 @@
-import './_header.scss';
+import styles from './_header.module.scss';
 
 export default function Header({ title }: { title: string }) {
 	return (
 		<div>
-			<h1 className="header">{title}</h1>
+			<h1 className={styles.header}>{title}</h1>
 		</div>
 	);
 }
