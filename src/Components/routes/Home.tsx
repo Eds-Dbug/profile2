@@ -3,6 +3,7 @@ import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import styles from './_home.module.scss';
 import Header from '../partials/Header';
 import { ME_BLACKWHITE } from 'assets/Pictures';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
 	return (
@@ -33,20 +34,19 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<p>
-				<button
-					className="btn btn-primary"
+			<button
+					className={`btn btn-outline-success ${styles["home__hobbies__toggle"]}`}
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#collapseWidthExample"
+					data-bs-target="#collapseWidth"
 					aria-expanded="false"
-					aria-controls="collapseWidthExample"
+					aria-controls="collapseWidth"
 				>
-					Toggle width collapse
+					TOGGLE HOBBIES
+          <FontAwesomeIcon icon={["fas","arrow-down"]}/>
 				</button>
-			</p>
 
-			<div className="collapse " id="collapseWidthExample">
+			<div className="collapse" id="collapseWidth">
 				<section className={styles.home__hobbies}>
 					<div className={styles.home__hobbies__sidebar}>
 						<HobbiesSideBar />

@@ -1,12 +1,7 @@
 @import '/src/styles/variables.scss';
 @import './src/styles/mixins.scss';
 
-.Hobbies {
 
-  &__about {
-    max-width: 600px;
-  }
-}
 
 .home {
   margin: 0 5%;
@@ -20,9 +15,17 @@
     margin: 0 5%;
     border: 1px solid $deep-jungle-green;
 
+    &__toggle {
+      @include flex($d: column);
+      margin: 0 5%;
+      width: 90%;
+      background-color: $charleston-green;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
     &__sidebar {
       width: 30%;
-
     }
 
     &__outlet {

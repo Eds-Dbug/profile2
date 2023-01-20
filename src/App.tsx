@@ -9,9 +9,10 @@ import Cycling from 'Components/routes/HobbyRoutes/Cycling';
 import Spinner from 'react-bootstrap/Spinner';
 import Home from 'Components/routes/Home';
 
-import { faCheckSquare, faCoffee, faEnvelope, faPhone, faR, faVial,  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faCheckSquare, faCoffee, faEnvelope, faPhone, faR, faVial } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  
 	fab,
 	faBootstrap,
 	faCss3,
@@ -40,6 +41,7 @@ library.add(
 	faJs,
 	faJava,
 	faCheckSquare,
+  faArrowDown,
 	faCoffee,
 	faSquareGithub,
 	faEnvelope,
