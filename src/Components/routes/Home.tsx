@@ -1,11 +1,28 @@
-import { Outlet } from 'react-router';
+import { Outlet, useNavigate } from 'react-router';
 import HobbiesSideBar from '../NavBar/HobbiesSideBar';
 import styles from './_home.module.scss';
 import Header from '../partials/Header';
 import { ME_BLACKWHITE } from 'assets/Pictures';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const [toggle, setToggle] = useState(0);
+  const [curLink, setCurLink] = useState('cycling');
+
+  const currentRoute = () => {
+    if(!toggle) {
+      navigate(`/home/${curLink}`);
+      setToggle(1);
+    }else {
+      setToggle(0);
+      navigate(`/home`);
+    }
+  }
+
 	return (
 		<>
 			<Header title="Home" />
@@ -41,15 +58,18 @@ export default function Home() {
 					data-bs-target="#collapseWidth"
 					aria-expanded="false"
 					aria-controls="collapseWidth"
+           onClick={() => currentRoute()}
 				>
 					TOGGLE HOBBIES
+          {curLink}
           <FontAwesomeIcon icon={["fas","arrow-down"]}/>
 				</button>
+        
 
 			<div className="collapse" id="collapseWidth">
 				<section className={styles.home__hobbies}>
 					<div className={styles.home__hobbies__sidebar}>
-						<HobbiesSideBar />
+						<HobbiesSideBar setCurLink={setCurLink} />
 					</div>
 					<div className={styles.home__hobbies__outlet}>
 						<Outlet />

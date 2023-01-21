@@ -1,29 +1,32 @@
 import CyclingNavBar from '../../NavBar/CyclingNavBar';
 import styles from './_Cycling.module.scss';
+import { cyclingCarouselData } from 'data/Data';
 import { IN_PROGRESS } from 'assets/Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigate } from 'react-router';
+import { useEffect } from 'react';
 
 export default function Cycling() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/home/cycling');
+  },[]);
+
+  const bikeMap = cyclingCarouselData.map((bike) => (
+    <div key={bike.id}>
+      <img className='' src={bike.src} />
+      <p className="legend">{bike.legend}</p>
+    </div>
+  ))
 	
   return (
 		<div className="cycling">
 			<div className="cycling__carousel">
-				<Carousel showArrows={true}>
+				<Carousel showArrows autoPlay infiniteLoop>
 					{/* replace divs with mapping so need to do data */}
-					<div>
-						<img src={IN_PROGRESS} />
-						<p className="legend">Legend 1</p>
-					</div>
-					<div>
-						<img src={IN_PROGRESS} />
-						<p className="legend">Legend 2</p>
-					</div>
-					<div>
-						<img src={IN_PROGRESS} />
-						<p className="legend">Legend 3</p>
-					</div>
+          {bikeMap}
 				</Carousel>
 			</div>
 			<div className="cycling__trips">

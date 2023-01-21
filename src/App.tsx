@@ -73,6 +73,7 @@ const router = createBrowserRouter(
 						{
 							path: 'cycling',
 							element: <Cycling />,
+              
 
 							children: [
 								{ path: 'City', element: <City /> },

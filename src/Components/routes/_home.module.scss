@@ -29,8 +29,9 @@
     }
 
     &__outlet {
-      min-width: 70%;
-      min-height: 500px;
+      width: 70%;
+      min-height: 800px;
+      border: 1px solid $btn-color;
     }
   }
 }
