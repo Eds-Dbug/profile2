@@ -1,0 +1,17 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variables.scss';
+
+.place {
+  @include flex($d:column, $i: center);
+  &__img {
+    max-width: 80%;
+    min-width: 550px;
+    height: 500px;
+  }
+
+  &__description {
+    padding: 3%;
+    border:0.5px solid $btn-color;
+    font-style: italic;
+  }
+}
