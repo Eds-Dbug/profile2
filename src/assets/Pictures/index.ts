@@ -16,5 +16,10 @@ import TRIBUTE from './Tribute_Page_Test.png';
 import VIDEO_SEARCH_APP from './Videos_Search_App.png';
 import ME_BLACKWHITE from './me black and white.jpg';
 import Bruce_Camp from './Bruce_Campsite.jpg'; 
+import GETOGETHER from './Getogether.png';
+import SCHEDULER from './Scheduler.png';
+import JUNGLE from './Jungle.png';
+import TWEETER from './Tweeter.png';
+import OMNI_BAR from './Omin_bar.png';
 
-export {Bruce_Camp, GIANT_BIKE, MOUSTACHE_BIKE, ME_BLACKWHITE, JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN, ME, BAY, IMAGE_SEARCH_APP, IN_PROGRESS, NIAGRA, EDDIES_MUSIC, RANDOM_QUOTE_MACHINE,SEASONS_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, VIDEO_SEARCH_APP };
+export {OMNI_BAR ,TWEETER ,JUNGLE, SCHEDULER, GETOGETHER ,Bruce_Camp, GIANT_BIKE, MOUSTACHE_BIKE, ME_BLACKWHITE, JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN, ME, BAY, IMAGE_SEARCH_APP, IN_PROGRESS, NIAGRA, EDDIES_MUSIC, RANDOM_QUOTE_MACHINE,SEASONS_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, VIDEO_SEARCH_APP };

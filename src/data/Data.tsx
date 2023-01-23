@@ -1,4 +1,24 @@
-import { JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN,BAY, IN_PROGRESS, VIDEO_SEARCH_APP, SEASONS_APP, IMAGE_SEARCH_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, RANDOM_QUOTE_MACHINE, NIAGRA, GIANT_BIKE, MOUSTACHE_BIKE} from 'assets/Pictures'
+import {
+	JS_AlGO_Cert,
+	RESPONSIVE_WEB_DESIGN,
+	BAY,
+	IN_PROGRESS,
+	VIDEO_SEARCH_APP,
+	SEASONS_APP,
+	IMAGE_SEARCH_APP,
+	STUDENT_LIST,
+	TECH_DOCS,
+	TRIBUTE,
+	RANDOM_QUOTE_MACHINE,
+	NIAGRA,
+	GIANT_BIKE,
+	MOUSTACHE_BIKE,
+	GETOGETHER,
+	SCHEDULER,
+	JUNGLE,
+	TWEETER,
+	OMNI_BAR,
+} from 'assets/Pictures';
 
 const contacts = [
 	{
@@ -223,11 +243,37 @@ const softwareSkills = [
 
 const projectData = [
 	{
+		id: 'omni_bar',
+		pic: OMNI_BAR,
+		link: 'https://github.com/internetarchive/openlibrary/pull/7297#issuecomment-1356806061',
+		description: 'Restyling the omni bar to a box layout.',
+	},
+	{
+		id: 'Getogether',
+		pic: GETOGETHER,
+		link: 'https://github.com/Eds-Dbug/GeTogether',
+		description:
+			'GeTogether is a project that is loosely inspired by the Meetups platform and is built using the PERN stack.',
+	},
+	{
 		id: 'scheduler_app',
-		pic: IN_PROGRESS,
+		pic: SCHEDULER,
 		link: 'https://github.com/Eds-Dbug/scheduler',
 		description:
-			'An app that allows for the creation of meetings between interviewers and students',
+			'A project that allows for the creation of meetings between interviewers and students.',
+	},
+	{
+		id: 'jungle',
+		pic: JUNGLE,
+		link: 'https://github.com/Eds-Dbug/jungle-rails',
+		description:
+			'A mini e-commerce application built with Rails 6.1 that sells plants and other green flora.',
+	},
+	{
+		id: 'tweeter',
+		pic: TWEETER,
+		link: 'https://github.com/Eds-Dbug/tweeter',
+		description: 'A a simple, single-page Twitter clone.',
 	},
 	{
 		id: 'Videos_Search_App',
