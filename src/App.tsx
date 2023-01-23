@@ -9,9 +9,18 @@ import Cycling from 'Components/routes/HobbyRoutes/Cycling';
 import Spinner from 'react-bootstrap/Spinner';
 import Home from 'Components/routes/Home';
 
-import { faCheckSquare, faCoffee, faEnvelope, faPhone, faR, faVial,  } from '@fortawesome/free-solid-svg-icons';
+import {
+	faArrowUp, faArrowDown,
+	faCheckSquare,
+	faCoffee,
+	faEnvelope,
+	faPhone,
+	faR,
+	faVial,
+} from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  
 	fab,
 	faBootstrap,
 	faCss3,
@@ -40,6 +49,8 @@ library.add(
 	faJs,
 	faJava,
 	faCheckSquare,
+  faArrowDown,
+	faArrowUp,
 	faCoffee,
 	faSquareGithub,
 	faEnvelope,
@@ -71,6 +82,7 @@ const router = createBrowserRouter(
 						{
 							path: 'cycling',
 							element: <Cycling />,
+              
 
 							children: [
 								{ path: 'City', element: <City /> },

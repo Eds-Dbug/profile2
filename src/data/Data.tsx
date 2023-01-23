@@ -1,4 +1,4 @@
-import { JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN,BAY, IN_PROGRESS, VIDEO_SEARCH_APP, SEASONS_APP, IMAGE_SEARCH_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, RANDOM_QUOTE_MACHINE, NIAGRA, GIANT_BIKE, Bruce_Camp} from 'assets/Pictures'
+import { JS_AlGO_Cert, RESPONSIVE_WEB_DESIGN,BAY, IN_PROGRESS, VIDEO_SEARCH_APP, SEASONS_APP, IMAGE_SEARCH_APP, STUDENT_LIST, TECH_DOCS, TRIBUTE, RANDOM_QUOTE_MACHINE, NIAGRA, GIANT_BIKE, MOUSTACHE_BIKE, Bruce_Camp} from 'assets/Pictures'
 
 const contacts = [
 	{
@@ -90,8 +90,17 @@ const bikeTripLinks = [
 	},
 ];
 
-const cyclingData = [
-	{}
+const cyclingCarouselData = [
+	{
+    id: 1,
+    src: GIANT_BIKE,
+    legend: 'My cyclocross bicyle, this is my main bicycle.'
+  },
+  {
+    id: 2,
+    src: MOUSTACHE_BIKE,
+    legend: 'My peddle assist ebike, I have a feeling the designers really capped the speed at 30km which is very fast for for a bicyle.'
+  }
 ]
 
 const certificates = [
@@ -336,7 +345,18 @@ const CyclingText = [
 	},
 ];
 
+const aboutData = [
+	{
+		id: 1,
+		text: `
+			Hello, I am a programmer and web developer with a variety of skills for crafting full stack applications or just general programming. 
+			Feel free to click below for hobbies or check out projects or skills (expertise section) and browse around!
+		`
+	}
+]
+
 export {
+	aboutData,
 	bikeTripLinks,
 	CyclingText,
 	contacts,
@@ -345,4 +365,5 @@ export {
 	certificates,
 	softwareSkills,
 	projectData,
+  cyclingCarouselData
 };

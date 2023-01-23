@@ -11,10 +11,13 @@ export default function Expertise() {
 
 	const certificateMap = certificates.map((cert) => {
 		return (
-			<div className={`card ${styles.certifications__grid__item}`} key={cert.id}>
+			<div
+				className={`card btn btn-outline-success ${styles.certifications__grid__item}`}
+				key={cert.id}
+			>
 				<img
 					src={cert.pic}
-					className="btn btn-outline-success card-img-top"
+					className=" card-img-top"
 					alt="..."
 					onClick={() => window.open(cert.link)}
 				/>
@@ -35,7 +38,9 @@ export default function Expertise() {
 				className={`card text-center ${styles.skills__software__body__item}`}
 				key={skill.id}
 			>
-				<div className={`card-body btn ${styles["skills__software__body__item--body"]}`}>
+				<div
+					className={`card-body btn btn-outline-success ${styles['skills__software__body__item--body']}`}
+				>
 					<a onClick={() => routeChange(skill.link)}>
 						{skill.iconPrefix ? (
 							<FontAwesomeIcon
@@ -46,13 +51,17 @@ export default function Expertise() {
 								]}
 							/>
 						) : (
-							<h6 className={`${styles["skills__software__body__item--title"]}`}>
+							<h6
+								className={`${styles['skills__software__body__item--title']}`}
+							>
 								{fullUpperCaseName}
 							</h6>
 						)}
 					</a>
 				</div>
-				<div className={`card-footer ${styles["skills__software__body__item--footer"]}`}>
+				<div
+					className={`card-footer ${styles['skills__software__body__item--footer']}`}
+				>
 					{upperCaseSkillName}
 				</div>
 			</section>

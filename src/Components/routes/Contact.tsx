@@ -62,11 +62,13 @@ export default function Contact() {
 	));
 
   return (
-		<div className={`${styles.contact} ps-3`}>
-			<Header title='Contacts'/>
-      <div className={styles.contact__cards}>
-        {contactMap}
-      </div>	
-		</div>
+		<>
+		<Header title='Contacts'/>
+			<div className={`${styles.contact} ps-3`}>
+				<div className={styles.contact__cards}>
+					{contactMap}
+				</div>	
+			</div>
+		</>
 	);
 }

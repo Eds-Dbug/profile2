@@ -26,14 +26,17 @@ export default function Projects() {
 			{arrayChunk(projectData, 3).map((row, i) => (
 				<div key={i} className={styles.projects__row}>
 					{row.map((col, i) => (
-						<div className={`card btn ${styles.projects__row__item}`} key={i}>
+						<div
+							className={`card btn btn-outline-success ${styles.projects__row__item}`}
+							key={i}
+						>
 							<a
-								className={styles['projects__row__item--link']}
+								className={` ${styles['projects__row__item--link']}`}
 								onClick={() => window.open(col.link)}
 							>
 								<img
 									src={col.pic}
-									className={`card-img-top ${styles["projects__row__item--img"]}`}
+									className={`card-img-top ${styles['projects__row__item--img']}`}
 									alt="..."
 								/>
 							</a>
