@@ -1,12 +1,11 @@
-import React from 'react'
 import {links} from 'data/Data';
 export default function NavBar() {
 
   const navMap = links.map((link: any) => {
     return (
       <a className="nav-padding btn btn-outline-secondary "
-				 href={link.url}
-				 key={link.id}
+				href={link.url}
+				key={link.id}
       >
           {link.name}
       </a>

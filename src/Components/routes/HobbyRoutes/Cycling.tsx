@@ -1,7 +1,5 @@
 import CyclingNavBar from '../../NavBar/CyclingNavBar';
-import styles from './_Cycling.module.scss';
 import { cyclingCarouselData } from 'data/Data';
-import { IN_PROGRESS } from 'assets/Pictures';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { Carousel } from 'react-responsive-carousel';
 import { Outlet, useNavigate } from 'react-router';
