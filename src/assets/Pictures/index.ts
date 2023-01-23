@@ -16,7 +16,7 @@ import TRIBUTE from './Tribute_Page_Test.png';
 import VIDEO_SEARCH_APP from './Videos_Search_App.png';
 import ME_BLACKWHITE from './me black and white.jpg';
 import Bruce_Camp from './Bruce_Campsite.jpg'; 
-import GETOGETHER from './Getogether.png';
+import GETOGETHER from './Getogther.png';
 import SCHEDULER from './Scheduler.png';
 import JUNGLE from './Jungle.png';
 import TWEETER from './Tweeter.png';
