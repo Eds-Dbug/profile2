@@ -67,7 +67,7 @@ const hobbyLinks = [
 	},
 	{
 		id: 3, 
-		name: 'Chivalry',
+		name: 'Chivalry Game',
 		url: 'chivalry'
 	}
 ];
