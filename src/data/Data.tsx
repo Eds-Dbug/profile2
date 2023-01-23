@@ -345,7 +345,18 @@ const CyclingText = [
 	},
 ];
 
+const aboutData = [
+	{
+		id: 1,
+		text: `
+			Hello, I am a programmer and web developer with a variety of skills for crafting full stack applications or just general programming. 
+			Feel free to click below for hobbies or check out projects or skills (expertise section) and browse around!
+		`
+	}
+]
+
 export {
+	aboutData,
 	bikeTripLinks,
 	CyclingText,
 	contacts,

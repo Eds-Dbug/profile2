@@ -7,6 +7,17 @@
   
   &__block {
     border-color: $btn-color;
+    font-style: bold;
+    font-size: large;
+    
+    &__title {
+      text-align: center;
+    }
+
+    &__img {
+      width: 350px;
+      height: 390px;
+    }
   }
 
   &__hobbies {

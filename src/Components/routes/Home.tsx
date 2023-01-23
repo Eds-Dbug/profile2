@@ -5,6 +5,7 @@ import Header from '../partials/Header';
 import { ME_BLACKWHITE } from 'assets/Pictures';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { aboutData } from 'data/Data';
 
 
 export default function Home() {
@@ -23,28 +24,30 @@ export default function Home() {
     }
   }
 
+	const aboutMap = aboutData.map((about) => (
+		<p className="card-text" key={about.id}>
+			{about.text}
+		</p>
+	));
+
 	return (
 		<>
 			<Header title="Home" />
-			<div
-				className={`${styles.home} `}
-			>
+			<div className={`${styles.home} `}>
 				<div className={`${styles.home__block} card`}>
 					<div className="row g-0 ">
 						<div className="col-md-8">
 							<div className="card-body">
-								<h1 className="card-title">EDGAR LEUNG</h1>
-								<p className="card-text">
-									This is a wider card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit
-									longer.
-								</p>
+								<h1 className={`${styles.home__block__title} card-title`}>
+									EDGAR LEUNG
+								</h1>
+								{aboutMap}
 							</div>
 						</div>
 						<div className="col-md-4 ">
 							<img
 								src={ME_BLACKWHITE}
-								className="img-fluid rounded-circle"
+								className={`${styles.home__block__img} img-fluid rounded-circle`}
 								alt="..."
 							/>
 						</div>
@@ -52,19 +55,21 @@ export default function Home() {
 				</div>
 			</div>
 			<button
-					className={`btn btn-outline-success ${styles["home__hobbies__toggle"]}`}
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#collapseWidth"
-					aria-expanded="false"
-					aria-controls="collapseWidth"
-           onClick={() => currentRoute()}
-				>
-					TOGGLE HOBBIES
-          {curLink}
-          <FontAwesomeIcon icon={["fas","arrow-down"]}/>
-				</button>
-        
+				className={`btn btn-outline-success ${styles['home__hobbies__toggle']}`}
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#collapseWidth"
+				aria-expanded="false"
+				aria-controls="collapseWidth"
+				onClick={() => currentRoute()}
+			>
+				TOGGLE HOBBIES
+				{toggle ? (
+					<FontAwesomeIcon icon={['fas', 'arrow-up']} />
+				) : (
+					<FontAwesomeIcon icon={['fas', 'arrow-down']} />
+				)}
+			</button>
 
 			<div className="collapse" id="collapseWidth">
 				<section className={styles.home__hobbies}>
