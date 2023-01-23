@@ -1,10 +1,9 @@
 @import '/src/styles/variables.scss';
 @import './src/styles/mixins.scss';
 
-
-
 .home {
   margin: 0 5%;
+  @include flex($d: column);
   
   &__block {
     border-color: $btn-color;

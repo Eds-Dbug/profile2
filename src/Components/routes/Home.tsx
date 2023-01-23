@@ -27,7 +27,7 @@ export default function Home() {
 		<>
 			<Header title="Home" />
 			<div
-				className={`${styles.home} d-flex justify-content-center align-items-center`}
+				className={`${styles.home} `}
 			>
 				<div className={`${styles.home__block} card`}>
 					<div className="row g-0 ">
