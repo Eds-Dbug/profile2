@@ -244,7 +244,7 @@ const projectData = [
 	{
 		id: 'omni_bar',
 		pic: OMNI_BAR,
-		link: 'https://github.com/internetarchive/openlibrary/pull/7297#issuecomment-1356806061',
+		link: 'https://github.com/internetarchive/openlibrary/issues/7008',
 		description: 'Restyling the omni bar to a box layout.',
 	},
 	{
